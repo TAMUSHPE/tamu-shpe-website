@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TAMU SHPE Website
 
-## Getting Started
+This is the official website for the [Society of Hispanic Professional Engineers](https://shpe.org/)' Texas A&M University chapter built using Next.js, React, Typescript, and Firebase. The website showcases events, announcements, sponsors, and membership information for the organization.
 
-First, run the development server:
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup & Installation](#setup--installation)
+- [License](#license)
+
+## Features
+
+- Responsive design for desktop, tablet, and mobile devices
+- Dynamic event calendar
+- Search and filtering functionality for dynamic content
+- Interactive forms for membership sign-ups and contact
+- SEO and performance optimized with Next.js
+
+## Technologies Used
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Frontend**: [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)
+- **Backend/Database**: [Firebase Firestore](https://firebase.google.com/)
+- **Hosting**: [Vercel](https://vercel.com/)
+- **Styling**: CSS Modules, [TailwindCSS](https://tailwindcss.com/)
+
+## Setup & Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/TAMUSHPE/tamu-shpe-website.git
+  cd tamu-shpe-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Set up enviornment variables. Create a **`.env.local`** file in the root directory and add the necessary api keys:
 
-## Learn More
+```bash
+  NEXT_PUBLIC_FLICKER_API_KEY=our-api-key
+  NEXT_PUBLIC_FLICKER_USER_ID=our-user-id
+  NEXT_PUBLIC_GOOGLE_PLACES_API_KEY = our-places-key
+  NEXT_PUBLIC_GOOGLE_API_KEY = our-google-key
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Navigate to [http://localhost:3000](http://localhost:3000) in your browser
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [**`LICENSE`**](LICENSE) file for details.
