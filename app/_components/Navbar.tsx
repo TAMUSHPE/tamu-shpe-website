@@ -8,7 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="flex items-center justify-center w-full max-w-4xl mx-auto p-4">
+    <nav className="flex items-center justify-center w-full p-4 shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)]">
       <ul className="flex gap-8">
         <li className="shrink-0">
           <Link href="/">
