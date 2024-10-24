@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 const sponsors = [
   { src: '/caterpillar.svg', alt: 'Caterpillar logo', width: 200, height: 100 },
@@ -15,7 +14,7 @@ const sponsors = [
   { src: '/rockwell.svg', alt: 'Rockwell logo', width: 200, height: 100 },
   { src: '/google.svg', alt: 'Google logo', width: 200, height: 100 },
   { src: '/exon.svg', alt: 'ExonMobil logo', width: 200, height: 100 },
-  { src: '/mircosoft.svg', alt: 'Microsoft logo', width: 200, height: 100 },
+  { src: '/microsoft.svg', alt: 'Microsoft logo', width: 200, height: 100 },
   { src: '/bp.svg', alt: 'BP logo', width: 100, height: 100 },
   { src: '/accenture.svg', alt: 'Accenture logo', width: 200, height: 100 },
   { src: '/capitol.svg', alt: 'Capital logo', width: 200, height: 100 },
@@ -26,12 +25,10 @@ const sponsors = [
 ];
 
 export default function Sponsors() {
-  const pathname = usePathname();
-
   return (
     <div className="divide-y divide-gray-400 space-y-2.5 ">
       <div className='w-full flex justify-between items-center'>
-        <h2 className='font-bold  relative text-gray-49 left-3 left-5 text-3xl py-2 px-4'>Our Sponsors</h2>
+        <h2 className='font-bold  relative text-gray-49 left-5 text-3xl py-2 px-4'>Our Sponsors</h2>
         <Link href="/sponsor">
           <button className="bg-orange-500 relative right-5 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded">
             Become a Sponsor
