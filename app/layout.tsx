@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Navbar from './_components/Navbar';
 import './globals.css';
+import type { Viewport } from 'next';
 
 const geistSans = localFont({
   src: './_fonts/GeistVF.woff',
@@ -17,6 +18,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'tamuSHPE',
   description: 'Leading and Preparing all Aggies',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
