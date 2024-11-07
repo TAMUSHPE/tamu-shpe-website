@@ -22,6 +22,7 @@ export default function Home() {
           <div className="h-48 bg-teal-200"></div>
         </div>
 
+        {/* Sponsors */}
         <div className="h-32 bg-green-500 w-full"></div>
 
         <div className="grid grid-cols-8 gap-5 lg:gap-10">
@@ -31,6 +32,7 @@ export default function Home() {
           <div className="h-96 w-full col-span-2 bg-yellow-400"></div>
         </div>
 
+        {/* Calendar */}
         <div className="h-[80vh] w-full bg-[#500000]"></div>
       </main>
     </div>
