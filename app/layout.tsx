@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Navbar from './_components/Navbar';
 import './globals.css';
-import Pillars from './_components/pillars';
+import type { Viewport } from 'next';
 
 const geistSans = localFont({
   src: './_fonts/GeistVF.woff',
@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   description: 'Leading and Preparing all Aggies',
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +34,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
-        <Pillars />
         <main>{children}</main>
       </body>
     </html>
