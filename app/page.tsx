@@ -9,6 +9,7 @@ export default function Home() {
           <div className="hidden lg:flex w-fit bg-[#F6F6F6] py-5 px-8 lg:h-72 lg:col-span-3">
             <Image src="/vert_logo.svg" alt="tamuSHPE Logo" width={0} height={0} className="w-full h-auto" />
           </div>
+          
           {/* Flickr Carousel */}
           <div className="h-64 w-full bg-blue-400 lg:col-span-6"></div>
           {/* Involvement Card */}
