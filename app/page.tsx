@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="h-full overflow-auto">
-      <main className="pb-5 container pt-5 mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
+      <main className="container mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
         <div className="grid items-center place-items-center grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
           {/* SHPE Logo */}
           <div className="hidden lg:flex w-fit bg-[#F6F6F6] py-5 px-8 lg:h-72 lg:col-span-3">

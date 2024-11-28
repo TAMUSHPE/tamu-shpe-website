@@ -13,7 +13,6 @@ const initialPillars = [
 ];
 
 export default function Pillars() {
-  const pathname = usePathname();
   const [pillars, setPillars] = useState(initialPillars);
 
 

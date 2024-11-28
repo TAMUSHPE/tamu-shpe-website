@@ -31,10 +31,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
+    <html lang="en" className='h-full'>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}>
+      <Navbar />
+      <main className='flex-grow py-5'>{children}</main>
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="h-full overflow-auto">
-      <main className="pb-5 container pt-5 mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
+      <main className="container mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
         {/* Chapter Focus */}
         <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12">
           <div className="h-64 w-full bg-blue-400 md:col-span-7"></div>
