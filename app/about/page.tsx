@@ -6,7 +6,7 @@ export default function About() {
         <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12">
           <div
             className="
-          flex flex-col h-fit w-full p-5 gap-3 border-8 border- border-[#732F2F] md:col-span-7"
+          flex flex-col h-fit w-full p-5 gap-3 border-8 border-[#732F2F] md:col-span-7"
           >
             <section>
               <h2 className="text-3xl pb-2 text-[#500000]">Our Mission</h2>
@@ -60,7 +60,9 @@ export default function About() {
               help them to grow personally, and professionally.
             </p>
           </div>
-          <button className="text-lg rounded-xl place-self-end bg-[#732F2F] text-white px-8 py-3">Bylaws & Constitution</button>
+          <button className="text-lg rounded-xl place-self-end bg-[#732F2F] text-white px-8 py-3">
+            Bylaws & Constitution
+          </button>
         </div>
 
         {/* Executive Board Cards */}
