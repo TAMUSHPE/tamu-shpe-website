@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import Navbar from './_components/Navbar';
 import Sponsors from './_components/SponsorCarousel';
 import './globals.css';
+import type { Viewport } from 'next';
 
 const geistSans = localFont({
   src: './_fonts/GeistVF.woff',
@@ -20,16 +21,21 @@ export const metadata: Metadata = {
   description: 'Leading and Preparing all Aggies',
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Navbar />
-        <main>{children}</main>
+    <html lang="en" className='h-full'>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}>
+      <Navbar />
+      <main className='flex-grow py-5'>{children}</main>
       </body>
     </html>
   );

@@ -11,8 +11,9 @@
   "dependencies": {
     "firebase": "^10.13.2",
     "next": "14.2.12",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^18.3.1",
+    "react-dom": "^18",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
     "@types/node": "^20",
