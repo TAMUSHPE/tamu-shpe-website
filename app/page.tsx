@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import Link from 'next/link';
+import SponsorCarousel from './_components/SponsorCarousel';
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
           <div className="hidden lg:flex w-fit bg-[#F6F6F6] py-5 px-8 lg:h-72 lg:col-span-3">
             <Image src="/vert_logo.svg" alt="tamuSHPE Logo" width={0} height={0} className="w-full h-auto" />
           </div>
-          
+
           {/* Flickr Carousel */}
           <div className="h-64 w-full bg-blue-400 lg:col-span-6"></div>
           {/* Involvement Card */}
@@ -24,7 +26,20 @@ export default function Home() {
         </div>
 
         {/* Sponsors */}
-        <div className="h-32 bg-green-500 w-full"></div>
+        <div className="w-full">
+          <div className="divide-y divide-gray-400 space-y-2.5 ">
+            <div className="w-full flex flex-col sm:flex-row justify-between items-center">
+              <h2 className="font-medium relative sm:left-5 text-3xl py-2 px-4">Our Sponsors</h2>
+              <Link
+                href="/sponsor"
+                className="bg-orange-500 h-fit relative sm:right-5 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded w-fit ml-auto"
+              >
+                Become a Sponsor
+              </Link>
+            </div>
+            <SponsorCarousel />
+          </div>
+        </div>
 
         <div className="grid grid-cols-8 gap-5 lg:gap-10">
           {/* Calendar */}

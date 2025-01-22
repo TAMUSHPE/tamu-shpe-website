@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 const sponsors = [
   { src: '/caterpillar.svg', alt: 'Caterpillar logo', width: 200, height: 100 },
@@ -26,31 +25,24 @@ const sponsors = [
 
 export default function Sponsors() {
   return (
-    <div className="divide-y divide-gray-400 space-y-2.5 ">
-      <div className='w-full flex justify-between items-center'>
-        <h2 className='font-bold  relative text-gray-49 left-5 text-3xl py-2 px-4'>Our Sponsors</h2>
-        <Link href="/sponsor">
-          <button className="bg-orange-500 relative right-5 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded">
-            Become a Sponsor
-          </button>
-        </Link>
-      </div>
-      <div className="w-full inline-flex flex-nowrap overflow-hidden group [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-        <ul className='flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused'>
-          {sponsors.map((sponsor, index) => (
-            <li key={index}>
-              <Image src={sponsor.src} alt={sponsor.alt} width={sponsor.width} height={sponsor.height} />
-            </li>
-          ))}
-        </ul>
-        <ul className='flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused' aria-hidden="true">
-          {sponsors.map((sponsor, index) => (
-            <li key={`duplicate-${index}`}>
-              <Image src={sponsor.src} alt={sponsor.alt} width={sponsor.width} height={sponsor.height} />
-            </li>
-          ))}
-        </ul>
-      </div>  
+    <div className="w-full inline-flex flex-nowrap overflow-hidden group [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused">
+        {sponsors.map((sponsor, index) => (
+          <li key={index}>
+            <Image src={sponsor.src} alt={sponsor.alt} width={sponsor.width} height={sponsor.height} />
+          </li>
+        ))}
+      </ul>
+      <ul
+        className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused"
+        aria-hidden="true"
+      >
+        {sponsors.map((sponsor, index) => (
+          <li key={`duplicate-${index}`}>
+            <Image src={sponsor.src} alt={sponsor.alt} width={sponsor.width} height={sponsor.height} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
