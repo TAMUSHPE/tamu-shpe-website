@@ -3,31 +3,73 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-center w-full p-4 shadow-[0_4px_6px_-4px_rgba(0,0,0,0.1)]">
-      <ul className="flex gap-8">
-        <li className="shrink-0">
-          <Link href="/">
-            <Image src="/horiz_logo.svg" alt="tamuSHPE Logo" width={100} height={100} />
-          </Link>
-        </li>
-        <li className={pathname === '/about' ? 'font-bold' : ''}>
-          <Link href="/about">About Us</Link>
-        </li>
-        <li className={pathname === '/involvement' ? 'font-bold' : ''}>
-          <Link href="/involvement">Get Involved</Link>
-        </li>
-        <li className={pathname === '/resources' ? 'font-bold' : ''}>
-          <Link href="/resources">Resources</Link>
-        </li>
-        <li className={pathname === '/sponsor' ? 'font-bold' : ''}>
-          <Link href="/sponsor">SponsorSHPE</Link>
-        </li>
-      </ul>
+    <nav className="flex items-center justify-between w-full p-4 shadow-md">
+      <div className="flex items-center pr-8">
+        <Link href="/">
+          <Image src="/horiz_logo.svg" alt="tamuSHPE Logo" width={100} height={100} />
+        </Link>
+      </div>
+
+      {/* normal tabs */}
+
+      <div className="flex items-center justify-between w-full">
+        <ul
+          className={`${isOpen ? 'block' : 'hidden'
+            } sm:flex flex-1 sm:justify-start gap-8 absolute sm:static top-14 right-2 bg-white sm:w-auto sm:bg-transparent p-4 sm:p-0`}
+        >
+          {['/about', '/involvement', '/resources', '/sponsor'].map((path, index) => {
+            const labels = ['About Us', 'Get Involved', 'Resources', 'SponsorSHPE'];
+            return (
+              <li key={index} className="relative group min-w-[100px] text-center">
+                <Link
+                  href={path}
+                  className={`${pathname === path ? 'font-bold' : ''
+                    } transition-all duration-200 flex justify-center`}
+                >
+                  {labels[index]}
+                </Link>
+                <span className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black group-hover:w-full transition-all duration-300"></span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
+      {/* dropdown tabs */}
+
+      <div className="flex items-center sm:hidden">
+        <button className="text-gray-800" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? '✕' : '☰'}
+        </button>
+        {isOpen && (
+          <div className="absolute top-10 right-2 bg-white shadow-lg rounded-md p-4">
+            <ul className="flex flex-col gap-4">
+              {['/about', '/involvement', '/resources', '/sponsor'].map((path, index) => {
+                const labels = ['About Us', 'Get Involved', 'Resources', 'SponsorSHPE'];
+                return (
+                  <li key={index} className="relative group min-w-[110px] text-center">
+                    <Link
+                      href={path}
+                      className={`${pathname === path ? 'font-bold' : ''
+                        } transition-all duration-200 flex justify-center`}
+                    >
+                      {labels[index]}
+                    </Link>
+                    <span className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-black group-hover:w-full transition-all duration-300"></span>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+      </div>
     </nav>
   );
 }
