@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Navbar from './_components/Navbar';
-import Sponsors from './_components/SponsorCarousel';
 import './globals.css';
 import type { Viewport } from 'next';
 
