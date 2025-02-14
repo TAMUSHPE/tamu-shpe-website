@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import SponsorCarousel from './_components/SponsorCarousel';
+import InvolvementBox from './_components/InvolvementBox';
 
 export default function Home() {
   return (
@@ -15,7 +16,9 @@ export default function Home() {
           {/* Flickr Carousel */}
           <div className="h-64 w-full bg-blue-400 lg:col-span-6"></div>
           {/* Involvement Card */}
-          <div className="h-72 w-full bg-purple-400 lg:col-span-3"></div>
+          <div className="h-72 w-full bg-purple-400 lg:col-span-3">
+            <InvolvementBox />
+          </div>
         </div>
 
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
