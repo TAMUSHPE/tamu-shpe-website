@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SponsorCarousel from './_components/SponsorCarousel';
 import FlickrCarousel from './_components/FlickrCarousel';
+import Pillars from './_components/Pillars';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           {/* Upcoming Events */}
           <div className="h-52 bg-orange-400"></div>
           {/* Pillars Card */}
-          <div className="h-48 bg-teal-200"></div>
+          <Pillars />
         </div>
 
         {/* Sponsors */}
@@ -43,7 +44,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-8 gap-5 lg:gap-10">
-          {/* Calendar */}
+          {/* Points */}
           <div className="h-[70vh] w-full col-span-6 bg-red-400"></div>
           {/* Mercado*/}
           <div className="h-96 w-full col-span-2 bg-yellow-400"></div>
