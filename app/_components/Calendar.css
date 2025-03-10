@@ -1,0 +1,31 @@
+:root {
+  --fc-button-bg-color: #F6F6F6;
+  --fc-button-border-color: #E0E0E0;
+  --fc-button-text-color: #848484;
+  --fc-button-active-text-color: white;
+  --fc-button-active-bg-color: #500000;
+  --fc-button-active-border-color: #500000;
+  --fc-button-hover-border-color: #732F2F;
+  --fc-button-hover-bg-color: #732F2F;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active,
+.fc .fc-button-primary:not(:disabled):active {
+  background-color: var(--fc-button-active-bg-color);
+  border-color: var(--fc-button-active-border-color);
+  color: var(--fc-button-active-text-color);
+}
+
+.fc-header-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .fc-header-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

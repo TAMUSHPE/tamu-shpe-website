@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "firebase": "^10.13.2",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/google-calendar": "^6.1.15",
+    "@fullcalendar/react": "^6.1.15",
+    "firebase": "^11.4.0",
     "framer-motion": "^12.4.7",
     "motion": "^12.4.7",
-    "next": "14.2.12",
+    "next": "^14.2.24",
     "react": "^18.3.1",
     "react-dom": "^18",
     "tailwind-scrollbar-hide": "^1.1.7"

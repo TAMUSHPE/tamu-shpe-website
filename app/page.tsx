@@ -3,6 +3,7 @@ import Link from 'next/link';
 import SponsorCarousel from './_components/SponsorCarousel';
 import FlickrCarousel from './_components/FlickrCarousel';
 import Pillars from './_components/Pillars';
+import Calendar from './_components/Calendar';
 
 export default function Home() {
   return (
@@ -51,7 +52,7 @@ export default function Home() {
         </div>
 
         {/* Calendar */}
-        <div className="h-[80vh] w-full bg-[#500000]"></div>
+        <Calendar/>
       </main>
     </div>
   );
