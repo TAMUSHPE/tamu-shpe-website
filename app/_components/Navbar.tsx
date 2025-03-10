@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
 
       {/* normal tabs */}
-      <div className="flex items-center justify-between w-full">
+      <div className="flex items-center justify-between w-full overflow-hidden">
         <ul
           className={`${
             isOpen ? 'block' : 'hidden'
@@ -55,7 +55,7 @@ export default function Navbar() {
           {isOpen ? '✕' : '☰'}
         </button>
         {isOpen && (
-          <div className="absolute top-10 right-2 bg-white shadow-lg rounded-md p-4">
+          <div className="absolute top-10 right-2 bg-white shadow-lg rounded-md p-4 z-50">
             <ul className="flex flex-col gap-4">
               {routeMap.map((route, index) => {
                 return (

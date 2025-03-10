@@ -56,7 +56,7 @@ export default function FlickrCarouselClient({ photos }: FlickrCarouselClientPro
   }
 
   return (
-    <div className="h-64 w-full bg-[#cceaff] lg:col-span-6 content-center overflow-hidden relative">
+    <div className="h-64 w-full bg-[#cceaff] lg:col-span-6 xl:col-span-7 content-center overflow-hidden relative">
       <div className="flex flex-row justify-center items-center h-[90%] w-full -space-x-6">
         <AnimatePresence initial={false}>
           {[-1, 0, 1].map((offset) => {

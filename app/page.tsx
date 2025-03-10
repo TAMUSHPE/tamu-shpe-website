@@ -9,19 +9,16 @@ import InvolvementBox from './_components/InvolvementBox';
 export default function Home() {
   return (
     <div className="h-full overflow-auto">
-      <main className="container mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
+      <main className="container mx-auto px-4 grid grid-cols-1 gap-8">
         <div className="grid items-center place-items-center grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
           {/* SHPE Logo */}
-          <div className="hidden lg:flex w-fit bg-[#F6F6F6] py-5 px-8 lg:h-72 lg:col-span-3">
-            <Image src="/vert_logo.svg" alt="tamuSHPE Logo" width={0} height={0} className="w-full h-auto" />
+          <div className="hidden lg:flex w-full bg-[#F6F6F6] py-5 px-8 h-full lg:col-span-3 xl:col-span-2 items-center justify-center">
+            <Image src="/vert_logo.svg" alt="tamuSHPE Logo" width={0} height={0} className="h-full w-auto" />
           </div>
 
-          {/* Flickr Carousel */}
           <FlickrCarousel />
-          {/* Involvement Card */}
-          <div className="h-72 w-full bg-purple-400 lg:col-span-3">
-            <InvolvementBox />
-          </div>
+
+          <InvolvementBox />
         </div>
 
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
