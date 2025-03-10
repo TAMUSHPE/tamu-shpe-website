@@ -5,6 +5,7 @@ import FlickrCarousel from './_components/FlickrCarousel';
 import Pillars from './_components/Pillars';
 import Calendar from './_components/Calendar';
 import InvolvementBox from './_components/InvolvementBox';
+import Mercado from './_components/Mercado';
 
 export default function Home() {
   return (
@@ -47,20 +48,7 @@ export default function Home() {
           {/* Points */}
           <div className="h-[70vh] w-full col-span-8 md:col-span-6 bg-red-400"></div>
           {/* Mercado*/}
-          <div className="place-items-center gap-4 col-span-8 md:col-span-2 h-fit w-full rounded shadow-md shadow-gray-500/50 bg-stone-100 max-w-96">
-            <Link href="/" className="text-center">
-              <h2 className="text-2xl font-bold py-4">SHPE Mercado</h2>
-              <div className="flex md:flex-col flex-row-reverse justify-around">
-                <div className="md:w-full h-56 px-4 py-4 md:py-0 place-items-center">
-                  <Image src="/gm.svg" alt="Mercado Image" width={0} height={0} className="h-full w-auto" />
-                </div>
-                <section className="size-auto flex flex-col text-left p-4">
-                  <h2 className="text-lg font-bold">2021-2022 MemberSHPE Shirt</h2>
-                  <h3 className="text-lg">$30</h3>
-                </section>
-              </div>
-            </Link>
-          </div>
+          <Mercado />
         </div>
 
         <Calendar />

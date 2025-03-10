@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: 'live.staticflickr.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'tamu.estore.flywire.com',
+        port: '',
+      }
     ],
   },
 };
