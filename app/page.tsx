@@ -4,6 +4,7 @@ import SponsorCarousel from './_components/SponsorCarousel';
 import FlickrCarousel from './_components/FlickrCarousel';
 import Pillars from './_components/Pillars';
 import Calendar from './_components/Calendar';
+import InvolvementBox from './_components/InvolvementBox';
 
 export default function Home() {
   return (
@@ -18,13 +19,14 @@ export default function Home() {
           {/* Flickr Carousel */}
           <FlickrCarousel />
           {/* Involvement Card */}
-          <div className="h-72 w-full bg-purple-400 lg:col-span-3"></div>
+          <div className="h-72 w-full bg-purple-400 lg:col-span-3">
+            <InvolvementBox />
+          </div>
         </div>
 
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
           {/* Upcoming Events */}
           <div className="h-52 bg-orange-400"></div>
-          {/* Pillars Card */}
           <Pillars />
         </div>
 
@@ -51,8 +53,7 @@ export default function Home() {
           <div className="h-96 w-full col-span-2 bg-yellow-400"></div>
         </div>
 
-        {/* Calendar */}
-        <Calendar/>
+        <Calendar />
       </main>
     </div>
   );
