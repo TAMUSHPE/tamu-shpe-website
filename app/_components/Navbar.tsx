@@ -16,7 +16,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex items-center justify-between w-full p-4 shadow-md">
+    <nav className="sticky top-0 z-50 bg-white flex items-center justify-between w-full px-4 h-16 shadow-md">
       {/* logo */}
       <div className="flex items-center pr-8 shrink-0">
         <Link href="/">
@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
 
       {/* normal tabs */}
-      <div className="flex items-center justify-between w-full overflow-hidden">
+      <div className="flex items-center justify-between w-full h-full overflow-hidden">
         <ul
           className={`${
             isOpen ? 'block' : 'hidden'
@@ -42,7 +42,7 @@ export default function Navbar() {
                 >
                   {route.label}
                 </Link>
-                <span className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 w-0 h-[2px] bg-[#500000] group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute bottom-[-4px] left-1/2 transform -translate-x-1/2 h-[2px] bg-[#500000] w-0 group-hover:w-full transition-all duration-300"></span>
               </li>
             );
           })}
