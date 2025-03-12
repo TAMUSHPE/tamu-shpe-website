@@ -36,23 +36,22 @@ export default function MercadoClient({ items }: { items: MercadoItem[] }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.75 }}
+        className='w-fit h-full'
       >
-        <Link href={items[currentIndex].link}>
-          <div className="flex md:flex-col flex-row-reverse justify-around">
-            <div className="md:w-full h-56 pr-4 py-4 md:p-0 place-items-center">
-              <Image
-                src={items[currentIndex]?.image}
-                alt="Mercado Image"
-                width={1440}
-                height={1080}
-                className="h-full w-auto rounded-sm"
-              />
-            </div>
-            <section className="size-auto flex flex-col text-left p-4">
-              <h2 className="text-lg font-bold">{items[currentIndex]?.title ?? 'NO TITLE'}</h2>
-              <h3 className="text-lg">${items[currentIndex]?.price ?? '0'}</h3>
-            </section>
+        <Link href={items[currentIndex].link} className="flex md:flex-col flex-row-reverse justify-around">
+          <div className="md:w-full h-56 pr-4 py-4 md:p-0 place-items-center w-full">
+            <Image
+              src={items[currentIndex]?.image}
+              alt="Mercado Image"
+              width={1440}
+              height={1080}
+              className="h-full w-auto rounded-sm"
+            />
           </div>
+          <section className="size-auto flex flex-col text-left p-4">
+            <h2 className="text-lg font-bold">{items[currentIndex]?.title ?? 'NO TITLE'}</h2>
+            <h3 className="text-lg">${items[currentIndex]?.price ?? '0'}</h3>
+          </section>
         </Link>
       </motion.div>
     </div>

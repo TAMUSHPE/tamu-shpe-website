@@ -6,6 +6,7 @@ import Pillars from './_components/Pillars';
 import Calendar from './_components/Calendar';
 import InvolvementBox from './_components/InvolvementBox';
 import Mercado from './_components/Mercado';
+import WeeklyEvents from './_components/WeeklyEvents';
 
 export default function Home() {
   return (
@@ -23,8 +24,8 @@ export default function Home() {
         </div>
 
         <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
-          {/* Upcoming Events */}
-          <div className="h-52 bg-orange-400"></div>
+          <WeeklyEvents />
+
           <Pillars />
         </div>
 

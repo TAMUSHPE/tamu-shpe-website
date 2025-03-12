@@ -3,18 +3,9 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FlickrPhoto } from '../_api/flickrUtils';
 
-interface FlickrPhoto {
-  id: string;
-  secret: string;
-  server: string;
-}
-
-interface FlickrCarouselClientProps {
-  photos: FlickrPhoto[];
-}
-
-export default function FlickrCarouselClient({ photos }: FlickrCarouselClientProps) {
+export default function FlickrCarouselClient({ photos }: { photos: FlickrPhoto[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -43,7 +34,7 @@ export default function FlickrCarouselClient({ photos }: FlickrCarouselClientPro
         <Image
           src={photoUrl}
           alt="Flickr Photo"
-          className="h-full object-contain drop-shadow-[0_4px_3px_rgba(0,0,0,.5)]"
+          className="h-full object-contain drop-shadow-[0_4px_3px_rgba(0,0,0,.5)] select-none"
           quality={100}
           fill
         />
