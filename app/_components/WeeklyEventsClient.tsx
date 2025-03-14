@@ -7,7 +7,6 @@ import Image from 'next/image';
 export default function WeeklyEventsClient({ photos }: { photos: FlickrPhoto[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentPhoto = photos[currentIndex];
-  const photoUrl = `https://live.staticflickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,6 +19,8 @@ export default function WeeklyEventsClient({ photos }: { photos: FlickrPhoto[] }
   if (photos.length === 0) {
     return <div>Loading...</div>;
   }
+
+  const photoUrl = `https://live.staticflickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
 
   const numDots = Math.min(7, photos.length);
 

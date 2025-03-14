@@ -6,7 +6,7 @@ export interface FlickrPhoto {
 
 export default async function fetchPhotos(flickrPhotoSetId: string): Promise<FlickrPhoto[]> {
   const flickerApiKey = process.env.FLICKER_API_KEY;
-  const flickerUserId = process.env.FLICKER_USER_ID;
+  const flickerUserId = "143848472@N03";
 
   const photos: FlickrPhoto[] = [];
 
