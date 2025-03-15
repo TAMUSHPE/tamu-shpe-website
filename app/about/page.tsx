@@ -1,3 +1,5 @@
+import OfficerCards from "./_components/OfficerCards";
+
 export default function About() {
   return (
     <div className="h-full overflow-auto">
@@ -64,9 +66,8 @@ export default function About() {
             Bylaws & Constitution
           </button>
         </div>
-
-        {/* Executive Board Cards */}
-        <div className="h-72 bg-red-500 w-full"></div>
+        
+        <OfficerCards />
       </main>
     </div>
   );
