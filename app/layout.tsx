@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Navbar from './_components/Navbar';
+import Footer from './_components/Footer';
 import './globals.css';
 import type { Viewport } from 'next';
 
@@ -35,6 +36,10 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}>
       <Navbar />
       <main className='flex-grow py-5'>{children}</main>
+      <div className="w-full bg-[#191740] lg:col-span-3">
+      <Footer />  
+      </div>
+      
       </body>
     </html>
   );
