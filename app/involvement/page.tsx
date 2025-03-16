@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Involvement() {
   return (
     <div className="h-full overflow-auto">
@@ -13,7 +15,7 @@ export default function Involvement() {
              <h1 className="text-md text-left font-extrabold"> SHPE National Registration </h1>
              <ul className="list-none list-inside text-left text-sm pl-8">
                <li className="-indent-4"> 1. Go to the <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap"> 
-                <a href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe">SHPE Registration</a> 
+                <Link href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe">SHPE Registration</Link> 
                 </span> site. 
                </li>
                <li className="-indent-4"> 2. Go to Join/Renew Membership, make sure to select Region 5 and Texas A&M University as your chapter. </li>
@@ -29,11 +31,11 @@ export default function Involvement() {
               <h1 className="text-md text-left font-extrabold"> TAMU Chapter Registration </h1>
               <ul className="list-none list-inside text-left text-sm pl-8">
                 <li className="-indent-4"> 1. Pay $20 to cover your #TAMUSHPE <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap"> 
-                  <a href="https://tamu.estore.flywire.com/products/2024-2025-membershpe-shirt-247722">T-shirt</a> 
+                  <Link href="https://tamu.estore.flywire.com/products/2024-2025-membershpe-shirt-247722">T-shirt</Link> 
                   </span>. </li>
                 <li className="-indent-4"> 2. <b>Screenshot</b> payment confirmation. </li>
                 <li className="-indent-4"> 3. Fill out our <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap"> 
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScMfQgPIBcOUDLojyf1ytRAUDxqipHNw2ZYNt0ori33Rl3Qzw/viewform">Google Form</a> 
+                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMfQgPIBcOUDLojyf1ytRAUDxqipHNw2ZYNt0ori33Rl3Qzw/viewform">Google Form</Link> 
                   </span> <b>Use non-tamu email to access form.</b> 
                 </li>
               </ul>
