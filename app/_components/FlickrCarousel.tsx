@@ -1,29 +1,8 @@
 import FlickrCarouselClient from './FlickrCarouselClient';
-
-interface FlickrPhoto {
-  id: string;
-  secret: string;
-  server: string;
-}
+import fetchPhotos from '../_api/flickrUtils';
 
 export default async function FlickrCarousel() {
-  const flickerApiKey = process.env.FLICKER_API_KEY;
-  const flickerUserId = process.env.FLICKER_USER_ID;
-  const flickrPhotoSetId = '72177720316068498';
-
-  const photos: FlickrPhoto[] = [];
-
-  try {
-    const url = `https://www.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=${flickerApiKey}&user_id=${flickerUserId}&photoset_id=${flickrPhotoSetId}&format=json&nojsoncallback=1`;
-
-    const response = await fetch(url);
-    const json = await response.json();
-    if (json && json.photoset && json.photoset.photo.length > 0) {
-      photos.push(...json.photoset.photo);
-    }
-  } catch (error) {
-    console.error('Error fetching photos:', error);
-  }
+  const photos = await fetchPhotos('72177720316068498');
 
   return <FlickrCarouselClient photos={photos} />;
 }
