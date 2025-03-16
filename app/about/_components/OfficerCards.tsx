@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import OfficerCard from './OfficerCard';
 
 export default function OfficerCards() {
   const officers = [
@@ -10,6 +10,7 @@ export default function OfficerCards() {
       img: '/president_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/president_img2.jpg',
     },
     {
       name: 'Sebastian Luna',
@@ -19,6 +20,7 @@ export default function OfficerCards() {
       img: '/vp_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/vp_img2.jpg',
     },
     {
       name: 'Gabriela Rivas',
@@ -28,6 +30,7 @@ export default function OfficerCards() {
       img: '/secretary_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/secretary_img2.jpg',
     },
     {
       name: 'Andy Cano-Avila',
@@ -37,6 +40,7 @@ export default function OfficerCards() {
       img: '/treasurer_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/treasurer_img2.jpg',
     },
     {
       name: 'Diego Landaeta',
@@ -46,6 +50,7 @@ export default function OfficerCards() {
       img: '/tech_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/tech_img2.jpg',
     },
     {
       name: 'Daniel Alvarado',
@@ -55,6 +60,7 @@ export default function OfficerCards() {
       img: '/pr_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/pr_img2.jpg',
     },
     {
       name: 'Marianne Bautista',
@@ -64,6 +70,7 @@ export default function OfficerCards() {
       img: '/internal_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/internal_img2.jpg',
     },
     {
       name: 'Esteban Ortiz',
@@ -73,6 +80,7 @@ export default function OfficerCards() {
       img: '/external_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/external_img2.jpg',
     },
     {
       name: 'Daniel Martinez',
@@ -82,37 +90,14 @@ export default function OfficerCards() {
       img: '/ad_headshot.jpg',
       quote:
         "SHPE empowers me to uplift my community, break barriers, and create opportunities. It's more than a network; it's a familia.",
+      img2: '/ad_img2.jpg',
     },
   ];
-
-  function OfficerCard(props: {
-    name: string;
-    position: string;
-    major: string;
-    year: string;
-    img: string;
-    quote: string;
-  }) {
-    return (
-      <div className="flex flex-col text-center items-center gap-2 bg-[#1870B8] p-3 w-56 h-80 rounded-xl justify-evenly shrink-0">
-        <p className="text-white h-14 content-center">{props.position}</p>
-        <div className="relative w-32 h-48 items-start">
-          <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top" fill />
-        </div>
-        <div className="flex flex-col justify-center items-center h-20 w-full">
-          <h3 className="text-white text-xl">{props.name}</h3>
-          <p className="text-white text-sm">
-            {props.major} {props.year}&apos;
-          </p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="h-fit bg-[#FD652F] w-full p-5">
       <h2 className="text-white text-3xl mb-3">Our Executive Board</h2>
-      <div className="flex w-full bg-[#D43F27] p-5 overflow-x-scroll gap-5">
+      <div className="flex w-full bg-[#D43F27] p-5 overflow-x-scroll overflow-y-hidden gap-5 rounded-lg">
         {officers.map((officer) => {
           return (
             <OfficerCard
@@ -123,6 +108,7 @@ export default function OfficerCards() {
               year={officer.year}
               img={officer.img}
               quote={officer.quote}
+              img2={officer.img2}
             />
           );
         })}
