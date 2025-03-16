@@ -1,5 +1,6 @@
 import VideoBox from './_components/VideoBox';
 import Link from "next/link";
+import CommitteeCards from './_components/CommitteeCards';
 
 export default function Involvement() {
   return (
@@ -51,7 +52,7 @@ export default function Involvement() {
         </div>
         <div className="bg-blue-500 w-full h-[13vh]"></div>
         <div className="bg-green-500 w-full h-[30vh]"></div>
-        <div className="bg-purple-500 w-full h-[50vh]"></div>
+        <CommitteeCards />
       </main>
     </div>
   );

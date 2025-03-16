@@ -99,18 +99,7 @@ export default function OfficerCards() {
       <h2 className="text-white text-3xl mb-3">Our Executive Board</h2>
       <div className="flex w-full bg-[#D43F27] p-5 overflow-x-scroll overflow-y-hidden gap-5 rounded-lg">
         {officers.map((officer) => {
-          return (
-            <OfficerCard
-              key={officer.name}
-              name={officer.name}
-              position={officer.position}
-              major={officer.major}
-              year={officer.year}
-              img={officer.img}
-              quote={officer.quote}
-              img2={officer.img2}
-            />
-          );
+          return <OfficerCard key={officer.name} {...officer} />;
         })}
       </div>
     </div>
