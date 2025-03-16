@@ -1,4 +1,5 @@
-import OfficerCards from "./_components/OfficerCards";
+import OfficerCards from './_components/OfficerCards';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -22,12 +23,16 @@ export default function About() {
               <p className="text-lg">Lead and Prepare all Aggies in their Profession.</p>
             </section>
           </div>
-          <div className="h-72 w-full bg-purple-400 md:col-span-4 md:col-start-9"></div>
+          <div className="relative h-72 w-full items-start md:col-span-4 md:col-start-9">
+            <Image src="/about_chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill />
+          </div>
         </div>
 
         {/* National Focus */}
         <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12">
-          <div className="h-72 w-full bg-purple-400 md:col-span-4"></div>
+          <div className="relative h-72 w-full items-start md:col-span-4">
+            <Image src="/about_national.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill />
+          </div>
           <div className="flex flex-col h-fit w-full p-5 gap-3 border-8 border-[#D33A02] md:col-span-7 md:col-start-6">
             <section>
               <h2 className="text-3xl pb-2 text-[#FD652F]">National Mission</h2>
@@ -66,7 +71,7 @@ export default function About() {
             Bylaws & Constitution
           </button>
         </div>
-        
+
         <OfficerCards />
       </main>
     </div>
