@@ -3,28 +3,64 @@ import Image from 'next/image';
 export default function CommitteesCards() {
   const commitees = [
     {
-      name: 'Academic Development',
-      img: '/ad_headshot.jpg',
+      name: 'SHPEtinas',
+      img: '/shpetinas_com.jpg',
+      description: 'The SHPEtinas Committee is dedicated to empowering and supporting Latinas in STEM.',
+    },
+    {
+      name: 'Public Relations',
+      img: '/pr_com.jpg',
+      description: 'The Public Relations Committee is responsible for promoting SHPE and its events.',
+    },
+    {
+      name: 'Internal Affairs',
+      img: '/internal_com.jpg',
+      description: 'The Internal Affairs Committee is responsible for planning social events and member bonding.',
+    },
+    {
+      name: 'External Affairs',
+      img: '/external_com.jpg',
+      description: 'The External Affairs Committee is responsible for volunteering and outreach events.',
+    },
+    {
+      name: 'MentorSHPE',
+      img: '/mentorshpe_com.jpg',
+      description: 'The MentorSHPE Committee is responsible for connecting underclassmen with upperclassmen members.',
+    },
+    {
+      name: 'Technical Affairs',
+      img: '/tech_com.jpg',
       description:
-        'The Academic Development Committee is responsible for providing resources and opportunities to help members succeed academically.',
+        'The Technical Affairs Committee is responsible for providing technical workshops and resources to members.',
+    },
+    {
+      name: 'Treasurer',
+      img: '/treasurer_com.jpg',
+      description: 'The Treasurer Committee is responsible for managing our finances and budget.',
+    },
+    {
+      name: 'Scholastic',
+      img: '/scholastic_com.jpg',
+      description:
+        'The Scholastic Committee is responsible for providing resources and opportunities to help members succeed academically.',
     },
   ];
 
   function CommiteeCard(props: { name: string; img: string; description: string }) {
     return (
-      <div className="bg-orange-600 w-52 h-72 pt-2 pb-5 rounded-xl flex flex-col justify-center items-center gap-2">
+      <div className="bg-orange-600 w-52 h-72 pt-2 pb-5 rounded-xl flex flex-col shrink-0 justify-center items-center gap-2">
         <div className="relative h-full w-[90%]">
           <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top rounded-lg" fill />
         </div>
-        <h2 className='text-xl font-semibold text-center'>{props.name}</h2>
+        <h2 className="text-xl font-semibold text-center">{props.name}</h2>
       </div>
     );
   }
 
   return (
     <div className="w-full">
-      <h1 className="text-2xl text-left font-semibold"> Check out our Committees! </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+      <h1 className="text-2xl text-left font-semibold mb-5"> Check out our Committees! </h1>
+      <div className="flex flex-row flex-wrap gap-5">
         {commitees.map((commitee) => (
           <CommiteeCard key={commitee.name} {...commitee} />
         ))}
