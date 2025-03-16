@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}>
         <Navbar />
-        <main className="flex-grow py-5">{children}</main>
+        <main className="flex-grow py-5 mb-28">{children}</main>
         <Footer />
       </body>
     </html>
