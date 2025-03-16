@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FlickrPhoto } from '../_api/flickrUtils';
+import { motion, AnimatePresence } from 'motion/react';
+import type { FlickrPhoto } from '../_api/flickrUtils';
 
 export default function FlickrCarouselClient({ photos }: { photos: FlickrPhoto[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
