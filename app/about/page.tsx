@@ -1,5 +1,6 @@
 import OfficerCards from './_components/OfficerCards';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -67,9 +68,12 @@ export default function About() {
               help them to grow personally, and professionally.
             </p>
           </div>
-          <button className="text-lg rounded-xl place-self-end bg-[#732F2F] text-white px-8 py-3">
+          <Link
+            href="/SHPE Constitution 2023-2024.pdf"
+            className="text-lg rounded-xl place-self-end bg-[#732F2F] text-white px-8 py-3"
+          >
             Bylaws & Constitution
-          </button>
+          </Link>
         </div>
 
         <OfficerCards />

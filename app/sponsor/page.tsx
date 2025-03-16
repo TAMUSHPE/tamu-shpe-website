@@ -1,11 +1,15 @@
+import Link from 'next/link';
+
 export default function Sponsor() {
   return (
     <div className="h-full overflow-auto">
       <main>
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Title Card */}
-          <div className="bg-amber-600 h-[45vh] lg:w-[55%] sm:w-4/5 w-full ease-in-out transition content-center">
-            <h1 className="text-white text-6xl text-center w-5/6 m-auto">Interested in Sponsoring TAMU SHPE?</h1>
+          <div className="bg-[url(/sponsor_cover.jpg)] bg-center bg-cover h-[45vh] lg:w-[55%] sm:w-4/5 w-full ease-in-out transition">
+            <div className="w-full h-full content-center bg-[#500000] bg-opacity-65">
+              <h1 className="text-white text-6xl text-center w-5/6 m-auto">Interested in Sponsoring TAMU SHPE?</h1>
+            </div>
           </div>
           {/* Description Card */}
           <div className="border-4 border-[#3C0000] h-fit w-4/5 lg:w-2/5 mt-14 self-end content-center">
@@ -35,7 +39,9 @@ export default function Sponsor() {
             <p className="text-3xl text-center">
               Take a look at our SponsorSHPE proposal packet below to learn where you fit into TAMU SHPE
             </p>
-            <button className="bg-[#1870B8] w-fit text-2xl px-8 py-2 rounded-xl">Our Proposal</button>
+            <Link href="/Sponsorship 2024-2025.pdf" className="bg-[#1870B8] w-fit text-2xl px-8 py-2 rounded-xl">
+              Our Proposal
+            </Link>
           </div>
         </div>
 
