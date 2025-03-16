@@ -22,7 +22,7 @@ export default function WeeklyEventsClient({ photos }: { photos: FlickrPhoto[] }
 
   const photoUrl = `https://live.staticflickr.com/${currentPhoto.server}/${currentPhoto.id}_${currentPhoto.secret}_b.jpg`;
 
-  const numDots = Math.min(7, photos.length);
+  const numDots = photos.length === 1 ? 0 : Math.min(7, photos.length);
 
   return (
     <div className="flex justify-center items-center w-full h-full">
