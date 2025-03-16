@@ -1,5 +1,5 @@
 import VideoBox from './_components/VideoBox';
-import Link from "next/link";
+import Link from 'next/link';
 import CommitteeCards from './_components/CommitteeCards';
 
 export default function Involvement() {
@@ -10,48 +10,118 @@ export default function Involvement() {
         {/* Steps for MemberSHPE */}
         <div className="bg-[#66AAE0] w-full p-5 flex flex-col">
           <h1 className="text-2xl text-left font-extrabold"> Steps for Membership </h1>
-          <h2 className="text-l text-gray-600 text-left"> To earn <b>points</b> you must be a registered national and chapter member! </h2>
+          <h2 className="text-l text-gray-600 text-left">
+            {' '}
+            To earn <b>points</b> you must be a registered national and chapter member!{' '}
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
             {/* National Registration Steps */}
-            <div className="bg-[#BADEFF] w-full h-full md:col-span-1 text-left p-3 flex flex-col gap-2"> 
-             <h1 className="text-md text-left font-extrabold"> SHPE National Registration </h1>
-             <ul className="list-none list-inside text-left text-sm pl-8">
-               <li className="-indent-4"> 1. Go to the <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap"> 
-                <Link href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe">SHPE Registration</Link> 
-                </span> site. 
-               </li>
-               <li className="-indent-4"> 2. Go to Join/Renew Membership, make sure to select Region 5 and Texas A&M University as your chapter. </li>
-               <li className="-indent-4"> 3. Fill out your Account Information and make sure that the Educational Information given to you is correct. </li>
-               <li className="-indent-4"> 4. Agree to the Code of Ethics and add the Membership to your cart. </li>
-               <li className="-indent-4"> 5. Pay for the membership. </li>
-             </ul>
-             <h1 className="text-l font-extrabold text-center"> SCREENSHOT PAYMENT CONFIRMATION FOR CHAPTER REGISTRATION </h1>
+            <div className="bg-[#BADEFF] w-full h-full md:col-span-1 text-left p-3 flex flex-col gap-2">
+              <h1 className="text-md text-left font-extrabold"> SHPE National Registration </h1>
+              <ul className="list-none list-inside text-left text-sm pl-8">
+                <li className="-indent-4">
+                  {' '}
+                  1. Go to the{' '}
+                  <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap">
+                    <Link href="https://www.shpeconnect.org/eweb/DynamicPage.aspx?WebCode=LoginRequired&expires=yes&Site=shpe">
+                      SHPE Registration
+                    </Link>
+                  </span>{' '}
+                  site.
+                </li>
+                <li className="-indent-4">
+                  {' '}
+                  2. Go to Join/Renew Membership, make sure to select Region 5 and Texas A&M University as your chapter.{' '}
+                </li>
+                <li className="-indent-4">
+                  {' '}
+                  3. Fill out your Account Information and make sure that the Educational Information given to you is
+                  correct.{' '}
+                </li>
+                <li className="-indent-4"> 4. Agree to the Code of Ethics and add the Membership to your cart. </li>
+                <li className="-indent-4"> 5. Pay for the membership. </li>
+              </ul>
+              <h1 className="text-l font-extrabold text-center">
+                {' '}
+                SCREENSHOT PAYMENT CONFIRMATION FOR CHAPTER REGISTRATION{' '}
+              </h1>
             </div>
             <div className="flex flex-col gap-14">
               {/* Chapter Registration Steps */}
-              <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2" > 
-              <h1 className="text-md text-left font-extrabold"> TAMU Chapter Registration </h1>
-              <ul className="list-none list-inside text-left text-sm pl-8">
-                <li className="-indent-4"> 1. Pay $20 to cover your #TAMUSHPE <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap"> 
-                  <Link href="https://tamu.estore.flywire.com/products/2024-2025-membershpe-shirt-247722">T-shirt</Link> 
-                  </span>. </li>
-                <li className="-indent-4"> 2. <b>Screenshot</b> payment confirmation. </li>
-                <li className="-indent-4"> 3. Fill out our <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap"> 
-                  <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMfQgPIBcOUDLojyf1ytRAUDxqipHNw2ZYNt0ori33Rl3Qzw/viewform">Google Form</Link> 
-                  </span> <b>Use non-tamu email to access form.</b> 
-                </li>
-              </ul>
+              <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2">
+                <h1 className="text-md text-left font-extrabold"> TAMU Chapter Registration </h1>
+                <ul className="list-none list-inside text-left text-sm pl-8">
+                  <li className="-indent-4">
+                    {' '}
+                    1. Pay $20 to cover your #TAMUSHPE{' '}
+                    <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap">
+                      <Link href="https://tamu.estore.flywire.com/products/2024-2025-membershpe-shirt-247722">
+                        T-shirt
+                      </Link>
+                    </span>
+                    .{' '}
+                  </li>
+                  <li className="-indent-4">
+                    {' '}
+                    2. <b>Screenshot</b> payment confirmation.{' '}
+                  </li>
+                  <li className="-indent-4">
+                    {' '}
+                    3. Fill out our{' '}
+                    <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap">
+                      <Link href="https://docs.google.com/forms/d/e/1FAIpQLScMfQgPIBcOUDLojyf1ytRAUDxqipHNw2ZYNt0ori33Rl3Qzw/viewform">
+                        Google Form
+                      </Link>
+                    </span>{' '}
+                    <b>Use non-tamu email to access form.</b>
+                  </li>
+                </ul>
               </div>
               {/* Congratulations */}
-              <div className="bg-[#D23F26] w-full max-h-min text-center text gap-2 p-2" > 
+              <div className="bg-[#D23F26] w-full max-h-min text-center text gap-2 p-2">
                 <h1 className="text-xl font-bold text-white">Congratulations!</h1>
                 <h3 className="text-sm text-white">You are an official TAMU SHPE Member!</h3>
               </div>
             </div>
           </div>
         </div>
-        <div className="bg-blue-500 w-full h-[13vh]"></div>
-        <div className="bg-green-500 w-full h-[30vh]"></div>
+        <div className="bg-[#500000] w-full h-[13vh] p-4 flex-1">
+          <h1 className="text-white font-bold text-[28px]">Why points?</h1>
+          <p className="text-white font-semibold text-[20px] pl-2.5">
+            Members who are top point earners can be eligible for sponsorship to future SHPE National Conventions and
+            have the opportunity to win various awards at the End of Year Banquet!
+          </p>
+        </div>
+        <div className="w-full  flex justify-between">
+          <div className="flex flex-col bg-[#191740] p-3  justify-evenly  w-1/3 rounded-3xl ">
+            <div className="flex items-center justify-around">
+              <img src="shpeicon.svg"></img>
+              <p className=" text-white  text-[28px] font-semibold ">
+                Download the
+                <br></br>
+                <strong className="text-orange-500">TAMU SHPE</strong>
+                <br></br>
+                Mobile App!
+              </p>
+            </div>
+            <div className="text-white self-center">Now on IOS and Android!</div>
+          </div>
+          <div className=" flex flex-col border-black border-2 p-4 text-[#3C0000]">
+            <div className=" self-center font-bold text-2xl">Gaining points</div>
+            <div className="grid grid-cols-2 gap-y-2  font-semibold ">
+              <div className="w-fit">General Meeting & Events - 1 pt</div>
+              <div className="w-fit">Academic Socials - 1 pt</div>
+              <div className="w-fit">General Meeting Sign Out - 2 pts</div>
+              <div className="w-fit">Community Service - 2 pts/hour </div>
+              <div className="w-fit">Elections - 4 pts</div>
+              <div className="w-fit">Upload old exam - 1 pt + 1 pt if A</div>
+              <div className="w-fit">Professional Workshops - 3 pts</div>
+              <div className="w-fit">Post your #wearitwednesday on Social Media - 1 pt</div>
+              <div className="w-fit">Academic Workshops - 2 pts</div>
+              <div className="w-fit">MemberSHPE Challenge - 1 pt</div>
+            </div>
+          </div>
+        </div>
         <CommitteeCards />
       </main>
     </div>
