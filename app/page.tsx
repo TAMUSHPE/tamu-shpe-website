@@ -7,6 +7,7 @@ import Calendar from './_components/Calendar';
 import InvolvementBox from './_components/InvolvementBox';
 import Mercado from './_components/Mercado';
 import WeeklyEvents from './_components/WeeklyEvents';
+import PointsTable from './_components/PointsTable';
 
 export default function Home() {
   return (
@@ -46,8 +47,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-8 gap-5 lg:gap-10 place-items-center">
-          {/* Points */}
-          <div className="h-[70vh] w-full col-span-8 md:col-span-6 bg-red-400"></div>
+          <PointsTable />
           <Mercado />
         </div>
 
