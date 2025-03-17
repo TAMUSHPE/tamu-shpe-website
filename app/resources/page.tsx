@@ -35,7 +35,10 @@ function ResourceSection({ title, description, color, image, link_map, place_end
         style={{ borderColor: color }}
       >
         <div className="flex flex-col gap-2">
-          <h2 className={`text-3xl ${place_end && 'text-end'}`} style={{ color: color }}> {title} </h2>
+          <h2 className={`text-3xl ${place_end && 'text-end'}`} style={{ color: color }}>
+            {' '}
+            {title}{' '}
+          </h2>
           <p className={`text-[#363636] text-lg ${place_end && 'text-end'}`}>{description}</p>
         </div>
         <div className={`${place_end && 'justify-end'} flex flex-row w-full flex-wrap gap-2`}>
@@ -43,7 +46,7 @@ function ResourceSection({ title, description, color, image, link_map, place_end
             <button
               key={key}
               onClick={() => router.push(link_map[key])}
-              className='text-white px-5 py-2 font-semibold rounded-md text-lg max-w-72'
+              className="text-white px-5 py-2 font-semibold rounded-md text-lg max-w-72"
               style={{ backgroundColor: color }}
             >
               {key}
@@ -71,7 +74,7 @@ export default function Resources() {
         title="Tech Affairs Website"
         description="The Tech Affairs Website provides a user guide for both creating a Personal Website as well as learning how to code in Python."
         color="#500000"
-        image="/tech_affairs.png"
+        image="/resources/tech_affairs.png"
         link_map={{
           'Tech Affairs Website': 'https://tech.tamushpe.org/',
         }}
@@ -79,7 +82,7 @@ export default function Resources() {
       <ResourceSection
         title="Job Opportunities"
         description="Whether it be jobs on campus or a summer internships, opportunities are readily available to those seeking the next step in their career."
-        image="/jobs.png"
+        image="/resources/jobs.png"
         color="#D33A02"
         link_map={{
           'Technical Opportunities': 'https://careercenter.tamu.edu/',
@@ -94,7 +97,7 @@ export default function Resources() {
            In SHPE, we believe that mental health is an important aspect and should be addressed with utmost importance.
            TAMU Helpline: 979-845-2700 --- About the Helpline"
         color="#60a5fa"
-        image="/mental_health.png"
+        image="/resources/mental_health.png"
         link_map={{
           'Self Help Resources': 'https://uhs.tamu.edu/mental-health/index.html',
           'Counseling Appointments': 'https://tamuportal.pointnclick.com/',

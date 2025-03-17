@@ -16,7 +16,7 @@ export default function Home() {
         <div className="grid items-center place-items-center grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
           {/* SHPE Logo */}
           <div className="hidden lg:flex w-full bg-[#F6F6F6] py-5 px-8 h-full lg:col-span-3 xl:col-span-2 items-center justify-center">
-            <Image src="/vert_logo.svg" alt="tamuSHPE Logo" width={0} height={0} className="h-full w-auto" />
+            <Image src="/logos/vert_logo.svg" alt="tamuSHPE Logo" width={0} height={0} className="h-full w-auto" />
           </div>
 
           <FlickrCarousel />

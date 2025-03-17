@@ -19,8 +19,8 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white flex items-center justify-between w-full px-4 h-16 shadow-md">
       {/* logo */}
       <div className="flex items-center pr-8 shrink-0 h-3/5">
-        <Link href="/" className='h-full'>
-          <Image src="/horiz_logo.svg" alt="tamuSHPE Logo" width={1440} height={1080} className="h-full w-auto" />
+        <Link href="/" className="h-full">
+          <Image src="/logos/horiz_logo.svg" alt="tamuSHPE Logo" width={1440} height={1080} className="h-full w-auto" />
         </Link>
       </div>
 

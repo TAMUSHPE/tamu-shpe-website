@@ -4,13 +4,17 @@ import Image from 'next/image';
 
 export default function Footer() {
   const socialLinks = [
-    { path: 'https://www.facebook.com/tamushpe5/', icon: '/facebook-icon.svg', label: 'Facebook' },
-    { path: 'https://x.com/tamushpe?lang=en', icon: '/x-icon.svg', label: 'X' },
-    { path: 'https://www.instagram.com/tamushpe/?hl=en', icon: '/Insta-icon.svg', label: 'Instagram' },
-    { path: 'https://www.snapchat.com/add/tamushpe', icon: '/snapchat-icon.svg', label: 'Snapchat' },
-    { path: 'https://www.youtube.com/channel/UCebsLGRRglWj459ueGDTzug', icon: '/youtube-icon.svg', label: 'Youtube' },
-    { path: 'https://www.linkedin.com/company/tamushpe/', icon: '/linkedin-icon.svg', label: 'LinkedIn' },
-    { path: 'https://www.flickr.com/photos/143848472@N03/', icon: '/flickr-icon.svg', label: 'Flickr' },
+    { path: 'https://www.facebook.com/tamushpe5/', icon: '/socials/facebook-icon.svg', label: 'Facebook' },
+    { path: 'https://x.com/tamushpe?lang=en', icon: '/socials/x-icon.svg', label: 'X' },
+    { path: 'https://www.instagram.com/tamushpe/?hl=en', icon: '/socials/Insta-icon.svg', label: 'Instagram' },
+    { path: 'https://www.snapchat.com/add/tamushpe', icon: '/socials/snapchat-icon.svg', label: 'Snapchat' },
+    {
+      path: 'https://www.youtube.com/channel/UCebsLGRRglWj459ueGDTzug',
+      icon: '/socials/youtube-icon.svg',
+      label: 'Youtube',
+    },
+    { path: 'https://www.linkedin.com/company/tamushpe/', icon: '/socials/linkedin-icon.svg', label: 'LinkedIn' },
+    { path: 'https://www.flickr.com/photos/143848472@N03/', icon: '/socials/flickr-icon.svg', label: 'Flickr' },
   ];
 
   return (
@@ -34,7 +38,13 @@ export default function Footer() {
         {/* Center Section */}
         <div className="mb-6 sm:w-1/3">
           <Link href="/">
-            <Image src="/SHPE_logo_horiz_TexasA&M.svg" alt="SHPE Logo" width={500} height={150} className="mx-auto" />
+            <Image
+              src="/logos/SHPE_logo_horiz_TexasA&M.svg"
+              alt="SHPE Logo"
+              width={500}
+              height={150}
+              className="mx-auto"
+            />
           </Link>
           {/* Social Links */}
           <div className="border-t border-[#468DC6] mt-6 pt-4">

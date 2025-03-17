@@ -60,7 +60,7 @@ export default function CommitteesCards() {
   return (
     <div className="w-full">
       <h1 className="text-2xl text-left font-semibold mb-5"> Check out our Committees! </h1>
-      <div className="flex flex-row flex-wrap gap-5">
+      <div className="flex flex-row flex-wrap gap-8">
         {commitees.map((commitee) => (
           <CommiteeCard key={commitee.name} {...commitee} />
         ))}
