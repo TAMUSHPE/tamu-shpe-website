@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-full flex flex-col`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased h-fit flex flex-col`}>
         <Navbar />
         <main className="flex-grow py-5 mb-28">{children}</main>
         <Footer />

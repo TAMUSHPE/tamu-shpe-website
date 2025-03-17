@@ -11,7 +11,7 @@ export default function WeeklyEventsClient({ photos }: { photos: FlickrPhoto[] }
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 10000); // Change image every 10 seconds
+    }, 15000); // Change image every 10 seconds
 
     return () => clearInterval(interval);
   }, [photos, currentIndex]);
