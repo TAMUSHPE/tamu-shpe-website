@@ -25,14 +25,14 @@ export default function About() {
             </section>
           </div>
           <div className="relative h-72 w-full items-start md:col-span-4 md:col-start-9">
-            <Image src="/about/chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill/>
+            <Image src="/about/chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill priority/>
           </div>
         </div>
 
         {/* National Focus */}
         <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12">
           <div className="relative h-72 w-full items-start md:col-span-4">
-            <Image src="/about/national.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill />
+            <Image src="/about/national.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill priority/>
           </div>
           <div className="flex flex-col h-fit w-full p-5 gap-3 border-8 border-[#D33A02] md:col-span-7 md:col-start-6">
             <section>
