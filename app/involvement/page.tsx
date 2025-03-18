@@ -1,5 +1,6 @@
 import VideoBox from './_components/VideoBox';
 import Link from 'next/link';
+import Image from 'next/image';
 import CommitteeCards from './_components/CommitteeCards';
 
 export default function Involvement() {
@@ -85,18 +86,32 @@ export default function Involvement() {
             </div>
           </div>
         </div>
-        <div className="bg-[#500000] w-full h-[13vh] p-4 flex-1">
-          <h1 className="text-white font-bold text-[28px]">Why points?</h1>
-          <p className="text-white font-semibold text-[20px] pl-2.5">
+
+        {/* Why Points */}
+        <div className="bg-[#500000] w-full h-[13vh] p-4 flex-1 ">
+          <h1 className="text-white font-bold text-2xl pb-2">Why points?</h1>
+          <p className="text-white font-semibold text-xl pl-2.5">
             Members who are top point earners can be eligible for sponsorship to future SHPE National Conventions and
             have the opportunity to win various awards at the End of Year Banquet!
           </p>
         </div>
-        <div className="w-full  flex justify-between">
-          <div className="flex flex-col bg-[#191740] p-3  justify-evenly  w-1/3 rounded-3xl ">
+
+        <div className="w-full flex flex-col lg:flex-row gap-16 justify-between items-center">
+          {/* SHPE App */}
+          <Link
+            href="https://play.google.com/store/apps/details?id=com.tamu.shpe&hl=en_US"
+            className="flex flex-col bg-[#191740] p-3 my-2 justify-evenly h-52 w-full max-w-[450px] rounded-3xl select-none"
+          >
             <div className="flex items-center justify-around">
-              <img src="shpeicon.svg"></img>
-              <p className=" text-white  text-[28px] font-semibold ">
+              <div className="relative h-24 w-24">
+                <Image
+                  src="/logos/shpeicon.svg"
+                  alt="SHPE Icon"
+                  className="h-full w-full object-cover object-top rounded-lg"
+                  fill
+                />
+              </div>
+              <p className="text-white text-2xl sm:text-3xl font-semibold ">
                 Download the
                 <br></br>
                 <strong className="text-orange-500">TAMU SHPE</strong>
@@ -105,9 +120,11 @@ export default function Involvement() {
               </p>
             </div>
             <div className="text-white self-center">Now on IOS and Android!</div>
-          </div>
-          <div className=" flex flex-col border-black border-2 p-4 text-[#3C0000]">
-            <div className=" self-center font-bold text-2xl">Gaining points</div>
+          </Link>
+
+          {/* Points */}
+          <div className=" flex flex-col border-black border-2 px-10 py-3 text-[#3C0000]">
+            <div className="self-center font-bold text-2xl">Gaining points</div>
             <div className="grid grid-cols-2 gap-y-2  font-semibold ">
               <div className="w-fit">General Meeting & Events - 1 pt</div>
               <div className="w-fit">Academic Socials - 1 pt</div>

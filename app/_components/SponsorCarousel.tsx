@@ -27,7 +27,12 @@ export default function Sponsors() {
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused">
         {sponsors.map((sponsor, index) => (
           <li key={index}>
-            <Image src={sponsor.src} alt={sponsor.alt} width={sponsor.width} height={sponsor.height} />
+            <Image
+              src={sponsor.src}
+              alt={sponsor.alt}
+              width={sponsor.width}
+              height={sponsor.height}
+            />
           </li>
         ))}
       </ul>
@@ -37,7 +42,12 @@ export default function Sponsors() {
       >
         {sponsors.map((sponsor, index) => (
           <li key={`duplicate-${index}`}>
-            <Image src={sponsor.src} alt={sponsor.alt} width={sponsor.width} height={sponsor.height} />
+            <Image
+              src={sponsor.src}
+              alt={sponsor.alt}
+              width={sponsor.width}
+              height={sponsor.height}
+            />
           </li>
         ))}
       </ul>
