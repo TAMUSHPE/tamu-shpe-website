@@ -6,6 +6,7 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import { useState } from 'react';
 import './Calendar.css';
+import Link from 'next/link';
 
 interface CalendarEvent {
   title: string;
@@ -28,8 +29,14 @@ export default function Calendar() {
   };
 
   return (
-    <div className="flex justify-center min-h-96 py-5 rounded-lg border-gray-400 border-2">
-      <div className="w-11/12">
+    <div className="flex w-full items-center justify-center min-h-96 py-5 rounded-lg border-gray-400 border-2">
+      <div className="flex flex-col w-11/12">
+        <Link
+          href="/"
+          className="hover:opacity-90 place-self-end bg-[#500000] mb-2 px-3 py-2 rounded-lg text-white drop-shadow-md"
+        >
+          Export Google Calendar
+        </Link>
         <FullCalendar
           plugins={[dayGridPlugin, googleCalendarPlugin]}
           initialView={'dayGridMonth'}
