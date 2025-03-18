@@ -1,6 +1,4 @@
-'use client';
-
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import Image from 'next/image';
 
 interface ResourceSectionProps {
@@ -13,8 +11,6 @@ interface ResourceSectionProps {
 }
 
 function ResourceSection({ title, description, color, image, link_map, place_end }: ResourceSectionProps) {
-  const router = useRouter();
-
   return (
     <div
       className={`flex ${place_end ? 'flex-col-reverse' : 'flex-col'} w-full md:min-h-[50vh] items-center md:flex-row`}
@@ -36,21 +32,20 @@ function ResourceSection({ title, description, color, image, link_map, place_end
       >
         <div className="flex flex-col gap-2">
           <h2 className={`text-3xl ${place_end && 'text-end'}`} style={{ color: color }}>
-            {' '}
-            {title}{' '}
+            {title}
           </h2>
           <p className={`text-[#363636] text-lg ${place_end && 'text-end'}`}>{description}</p>
         </div>
         <div className={`${place_end && 'justify-end'} flex flex-row w-full flex-wrap gap-2`}>
           {Object.keys(link_map).map((key) => (
-            <button
+            <Link
+              href={link_map[key]}
               key={key}
-              onClick={() => router.push(link_map[key])}
               className="text-white px-5 py-2 font-semibold rounded-md text-lg max-w-72"
               style={{ backgroundColor: color }}
             >
               {key}
-            </button>
+            </Link>
           ))}
         </div>
       </div>
