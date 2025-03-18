@@ -34,7 +34,7 @@ export default function Home() {
         <div className="w-full">
           <div className="divide-y divide-gray-400 space-y-2.5 ">
             <div className="w-full flex flex-col sm:flex-row justify-between items-center">
-              <h2 className="font-medium relative sm:left-5 text-3xl py-2 px-4">Our Sponsors</h2>
+              <h2 className="font-medium relative sm:left-5 text-3xl py-2 pr-4">Our Sponsors</h2>
               <Link
                 href="/sponsor"
                 className="bg-orange-500 h-fit relative sm:right-5 hover:bg-orange-400 text-white font-bold py-2 px-4 rounded w-fit ml-auto"

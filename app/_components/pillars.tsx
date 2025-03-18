@@ -41,8 +41,8 @@ export default function Pillars() {
       </div>
       <div className="space-y-4 flex flex-col w-full ml-2 mb-4 p-2 pt-4 overflow-y-auto scrollbar-hide max-w">
         {pillars.map((pillar, idx) => (
-          <div key={idx} className="bg-[#468DC6] w-[97%] rounded p-2 flex flex-row space-x-4">
-            <Image src={pillar.src} width={60} height={60} alt="Pillar Img" />
+          <div key={idx} className="bg-[#468DC6] w-[97%] rounded p-2 flex flex-row items-center space-x-4">
+            <Image src={pillar.src} width={60} height={60} alt="Pillar Img" style={{ height: 60, width: 60 }} />
             <div>
               <h1 className="font-bold text-lg">{pillar.title}</h1>
               <p className="text-sm">{pillar.description}</p>

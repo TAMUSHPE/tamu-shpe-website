@@ -25,7 +25,7 @@ export default function About() {
             </section>
           </div>
           <div className="relative h-72 w-full items-start md:col-span-4 md:col-start-9">
-            <Image src="/about/chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill />
+            <Image src="/about/chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill/>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ export default function About() {
             </p>
           </div>
           <Link
-            href="/resources/SHPE Constitution 2023-2024.pdf"
+            href="/pdf/SHPE Constitution 2023-2024.pdf"
             className="text-lg rounded-xl place-self-end bg-[#732F2F] text-white px-8 py-3"
           >
             Bylaws & Constitution

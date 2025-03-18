@@ -83,7 +83,13 @@ export default function Footer() {
       <div className="flex flex-col items-center sm:hidden px-6">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logos/SHPE_logo_horiz_TexasA&M.svg" alt="SHPE Logo" width={300} height={90} className="mx-auto mb-4" />
+          <Image
+            src="/logos/SHPE_logo_horiz_TexasA&M.svg"
+            alt="SHPE Logo"
+            width={300}
+            height={90}
+            className="mx-auto mb-4"
+            />
         </Link>
 
         {/* Social Links */}

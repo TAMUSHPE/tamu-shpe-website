@@ -40,7 +40,7 @@ export default function Sponsor() {
               Take a look at our SponsorSHPE proposal packet below to learn where you fit into TAMU SHPE
             </p>
             <Link
-              href="/resources/Sponsorship 2024-2025.pdf"
+              href="/pdf/Sponsorship 2024-2025.pdf"
               className="bg-[#1870B8] w-fit text-2xl px-8 py-2 rounded-xl"
             >
               Our Proposal

@@ -5,7 +5,7 @@ const sponsors = [
   { src: '/sponsors/gm.svg', alt: 'General Motors logo', width: 75, height: 100 },
   { src: '/sponsors/fluor.svg', alt: 'Fluor logo', width: 200, height: 100 },
   { src: '/sponsors/pepsico.svg', alt: 'Pepsico logo', width: 200, height: 100 },
-  { src: '/sponsors/lockheedmartin.svg', alt: 'Lockheed Martin logo', width: 300, height: 200 },
+  { src: '/sponsors/lockheedmartin.svg', alt: 'Lockheed Martin logo', width: 300, height: 100 },
   { src: '/sponsors/proctor.svg', alt: 'Proctor and Gamble logo', width: 100, height: 100 },
   { src: '/sponsors/pwc.svg', alt: 'PWC logo', width: 100, height: 100 },
   { src: '/sponsors/rockwell.svg', alt: 'Rockwell logo', width: 200, height: 100 },
@@ -32,6 +32,7 @@ export default function Sponsors() {
               alt={sponsor.alt}
               width={sponsor.width}
               height={sponsor.height}
+              style={{ width: sponsor.width, height: sponsor.height }}
             />
           </li>
         ))}
@@ -47,6 +48,7 @@ export default function Sponsors() {
               alt={sponsor.alt}
               width={sponsor.width}
               height={sponsor.height}
+              style={{ width: sponsor.width, height: sponsor.height }}
             />
           </li>
         ))}
