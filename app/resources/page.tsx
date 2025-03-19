@@ -56,6 +56,7 @@ function ResourceSection({ title, description, color, image, link_map, place_end
           width={500}
           height={500}
           className="w-full h-[300px] md:min-h-[300px] md:h-full object-cover md:w-1/2"
+          priority
         />
       )}
     </div>
