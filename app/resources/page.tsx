@@ -27,21 +27,21 @@ function ResourceSection({ title, description, color, image, link_map, place_end
       <div
         className={`flex flex-col border-[12px] border-t-0 ${
           place_end ? 'md:border-r-0' : 'md:border-l-0'
-        } md:border-t-[12px] w-full h-5/6 p-8 md:min-h-fit min-w-96 justify-between items-start gap-4`}
+        } md:border-t-[12px] w-full h-5/6 p-8 md:min-h-fit sm:min-w-96 justify-between items-start gap-4`}
         style={{ borderColor: color }}
       >
         <div className="flex flex-col gap-2">
-          <h2 className={`text-3xl ${place_end && 'text-end'}`} style={{ color: color }}>
+          <h2 className={`text-2xl sm:text-3xl ${place_end && 'text-end'}`} style={{ color: color }}>
             {title}
           </h2>
-          <p className={`text-[#363636] text-lg ${place_end && 'text-end'}`}>{description}</p>
+          <p className={`text-[#363636] text-md sm:text-lg ${place_end && 'text-end'}`}>{description}</p>
         </div>
-        <div className={`${place_end && 'justify-end'} flex flex-row w-full flex-wrap gap-2`}>
+        <div className={`${place_end && 'sm:justify-end'} justify-center sm:justify-start flex flex-row w-full flex-wrap gap-2`}>
           {Object.keys(link_map).map((key) => (
             <Link
               href={link_map[key]}
               key={key}
-              className="text-white px-5 py-2 font-semibold rounded-md text-lg max-w-72"
+              className="text-white text-center px-5 py-2 font-semibold rounded-md text-md sm:text-lg max-w-72"
               style={{ backgroundColor: color }}
             >
               {key}
