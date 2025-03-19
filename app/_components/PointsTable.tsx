@@ -2,6 +2,9 @@ import { PublicUserInfo } from '../api/firebaseUtils';
 
 async function getUsers(): Promise<PublicUserInfo[]> {
   const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/firebaseRoute`, { next: { revalidate: 60 } });
+  if (!res.ok) {
+    throw new Error('Failed to fetch leaderboard data. Status: ' + res.status);
+  }
   return res.json();
 }
 

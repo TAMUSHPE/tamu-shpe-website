@@ -12,6 +12,9 @@ export const revalidate = 604800; // 7 days (604800 seconds)
 
 async function fetchFlywireItems(): Promise<MercadoItem[]> {
   const res = await fetch('https://tamu.estore.flywire.com/products?storeCatalog=5935');
+  if (!res.ok) {
+    throw new Error('Failed to fetch Mercado data. Status: ' + res.status);
+  }
   const html = await res.text();
   const $ = cheerio.load(html);
 
