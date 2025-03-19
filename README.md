@@ -22,8 +22,8 @@ This is the official website for the [Society of Hispanic Professional Engineers
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Frontend**: [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/)
 - **Backend/Database**: [Firebase Firestore](https://firebase.google.com/)
-- **Hosting**: [Vercel](https://vercel.com/)
-- **Styling**: CSS Modules, [TailwindCSS](https://tailwindcss.com/)
+- **Hosting**: [Netlify](https://www.netlify.com/)
+- **Styling**: CSS Modules, [TailwindCSS](https://tailwindcss.com/), [Motion](https://motion.dev/)
 
 ## Setup & Installation
 
@@ -43,10 +43,10 @@ This is the official website for the [Society of Hispanic Professional Engineers
 3. Set up enviornment variables. Create a **`.env.local`** file in the root directory and add the necessary api keys:
 
 ```bash
-  NEXT_PUBLIC_FLICKER_API_KEY=our-api-key
-  NEXT_PUBLIC_FLICKER_USER_ID=our-user-id
-  NEXT_PUBLIC_GOOGLE_PLACES_API_KEY = our-places-key
-  NEXT_PUBLIC_GOOGLE_API_KEY = our-google-key
+FLICKER_API_KEY=our-flickr-key
+NEXT_PUBLIC_GOOGLE_API_KEY=our-firebase-key
+NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY=our-calendar-key
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
 
 4. Run the development server
