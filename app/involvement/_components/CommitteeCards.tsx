@@ -4,45 +4,72 @@ export default function CommitteesCards() {
   const commitees = [
     {
       name: 'SHPEtinas',
-      img: '/shpetinas_com.jpg',
+      img: '/committees/shpetinas.jpg',
       description: 'The SHPEtinas Committee is dedicated to empowering and supporting Latinas in STEM.',
     },
     {
+      name: 'MentorSHPE',
+      img: '/committees/mentorshpe.jpg',
+      description: 'The MentorSHPE Committee is responsible for connecting underclassmen with upperclassmen members.',
+    },
+    {
       name: 'Public Relations',
-      img: '/pr_com.jpg',
+      img: '/committees/pr.jpg',
       description: 'The Public Relations Committee is responsible for promoting SHPE and its events.',
     },
     {
       name: 'Internal Affairs',
-      img: '/internal_com.jpg',
+      img: '/committees/internal.jpg',
       description: 'The Internal Affairs Committee is responsible for planning social events and member bonding.',
     },
     {
+      name: 'Treasurer',
+      img: '/committees/treasurer.jpg',
+      description: 'The Treasurer Committee is responsible for managing our finances and budget.',
+    },
+    {
       name: 'External Affairs',
-      img: '/external_com.jpg',
+      img: '/committees/external.jpg',
       description: 'The External Affairs Committee is responsible for volunteering and outreach events.',
     },
     {
-      name: 'MentorSHPE',
-      img: '/mentorshpe_com.jpg',
-      description: 'The MentorSHPE Committee is responsible for connecting underclassmen with upperclassmen members.',
-    },
-    {
       name: 'Technical Affairs',
-      img: '/tech_com.jpg',
+      img: '/committees/tech.jpg',
       description:
         'The Technical Affairs Committee is responsible for providing technical workshops and resources to members.',
     },
     {
-      name: 'Treasurer',
-      img: '/treasurer_com.jpg',
-      description: 'The Treasurer Committee is responsible for managing our finances and budget.',
-    },
-    {
       name: 'Scholastic',
-      img: '/scholastic_com.jpg',
+      img: '/committees/scholastic.jpg',
       description:
         'The Scholastic Committee is responsible for providing resources and opportunities to help members succeed academically.',
+    },
+    {
+      name: 'Secretary',
+      img: '/committees/secretary.jpg',
+      description: 'The Secretary Committee is responsible for taking notes and keeping records of meetings.',
+    },
+    {
+      name: 'LeaderSHPE',
+      img: '/committees/leadershpe.jpg',
+      description: 'The LeaderSHPE Committee is responsible for developing leadership skills in members.',
+    },
+    {
+      name: 'Professional Development',
+      img: '/committees/profdev.jpg',
+      description:
+        'The Professional Development Committee is responsible for connecting members with professional opportunities.',
+    },
+    {
+      name: 'Web Development',
+      img: '/committees/webdev.jpg',
+      description:
+        'The Web Development Committee is responsible for maintaining and updating our website and digital resources.',
+    },
+    {
+      name: 'App Development',
+      img: '/committees/appdev.jpg',
+      description: 'The App Development Committee is responsible for developing and maintaining our mobile app.',
     },
   ];
 
