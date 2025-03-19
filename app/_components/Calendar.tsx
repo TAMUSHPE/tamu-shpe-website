@@ -32,10 +32,10 @@ export default function Calendar() {
     <div className="flex w-full items-center justify-center min-h-96 py-5 rounded-lg border-gray-400 border-2">
       <div className="flex flex-col w-11/12">
         <Link
-          href="/"
+          href="https://calendar.google.com/calendar/u/0?cid=anBzbzFuZ2lqMXNmcnExYzE5aDRocmdzbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
           className="hover:opacity-90 place-self-end bg-[#500000] mb-2 px-3 py-2 rounded-lg text-white drop-shadow-md"
         >
-          Export Google Calendar
+          Add Google Calendar
         </Link>
         <FullCalendar
           plugins={[dayGridPlugin, googleCalendarPlugin]}
