@@ -35,7 +35,7 @@ const pillars = [
 
 export default function Pillars() {
   return (
-    <div className="bg-[#191740] text-[#E8F1F8] w-full flex flex-col h-72">
+    <div className="bg-[#191740] text-[#E8F1F8] w-full flex flex-col min-h-72 max-h-[30rem]">
       <div>
         <h1 className="font-bold text-2xl ml-5 mt-3 mb-1 flex-row-reverse">The Five Pillars</h1>
       </div>
