@@ -28,7 +28,7 @@ export const getSortedUserData = async (): Promise<PublicUserInfo[]> => {
     const endSchool = new Date(endYear, 4, 31);
 
     const userRef = collection(db, 'users');
-    const sortedUsersQuery = query(userRef, orderBy('points', 'desc'), limit(10));
+    const sortedUsersQuery = query(userRef, orderBy('points', 'desc'), limit(80));
     const sortedData = (await getDocs(sortedUsersQuery)).docs;
     const users = await Promise.all(
       sortedData.map(async (value) => {
