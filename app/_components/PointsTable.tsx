@@ -4,7 +4,7 @@ async function getUsers(): Promise<PublicUserInfo[]> {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/firebaseRoute`, {
       cache: 'force-cache',
-      next: { revalidate: 60 },
+      next: { revalidate: 604800 },
     });
     if (!res.ok) {
       throw new Error('Failed to fetch leaderboard data. Status: ' + res.status);
