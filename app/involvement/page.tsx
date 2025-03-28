@@ -41,13 +41,12 @@ export default function Involvement() {
                 </li>
                 <li className="-indent-4"> 4. Agree to the Code of Ethics and add the Membership to your cart. </li>
                 <li className="-indent-4"> 5. Pay for the membership. </li>
+                <li className="-indent-4"> 6.<b>Screenshot</b> payment confirmation.</li>
+                <li className="-indent-4 font-extrabold">National membership must be renewed annually!</li>
               </ul>
-              <h1 className="text-l font-extrabold text-center">
-                {' '}
-                SCREENSHOT PAYMENT CONFIRMATION FOR CHAPTER REGISTRATION{' '}
-              </h1>
+              
             </div>
-            <div className="flex flex-col gap-14">
+            <div className="flex flex-col gap-4">
               {/* Chapter Registration Steps */}
               <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2">
                 <h1 className="text-md text-left font-extrabold"> TAMU Chapter Registration </h1>
@@ -76,8 +75,14 @@ export default function Involvement() {
                     </span>{' '}
                     <b>Use non-tamu email to access form.</b>
                   </li>
+                  <li className="-indent-4 font-extrabold">Chapter membership must be renewed at the beginning of the school year!</li>
                 </ul>
               </div>
+              <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2">
+                <h1 className='text-center font-extrabold text-2xl'>Screenshots must be uploaded onto the SHPE mobile app!</h1>
+              </div>
+
+
               {/* Congratulations */}
               <div className="bg-[#D23F26] w-full max-h-min text-center text gap-2 p-2">
                 <h1 className="text-xl font-bold text-white">Congratulations!</h1>
