@@ -1,7 +1,6 @@
-import Image from 'next/image';
-
+import  CommitteeCard  from "./CommitteeCard";
 export default function CommitteesCards() {
-  const commitees = [
+  const committees = [
     {
       name: 'SHPEtinas',
       img: '/committees/shpetinas.jpg',
@@ -73,23 +72,12 @@ export default function CommitteesCards() {
     },
   ];
 
-  function CommiteeCard(props: { name: string; img: string; description: string }) {
-    return (
-      <div className="bg-orange-600 w-52 h-72 pt-2 pb-5 rounded-xl flex flex-col shrink-0 justify-center items-center gap-2">
-        <div className="relative h-full w-[90%]">
-          <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top rounded-lg" fill />
-        </div>
-        <h2 className="text-xl font-semibold text-center">{props.name}</h2>
-      </div>
-    );
-  }
-
   return (
     <div className="w-full">
       <h1 className="text-2xl text-left font-semibold mb-5"> Check out our Committees! </h1>
       <div className="flex flex-row flex-wrap gap-8">
-        {commitees.map((commitee) => (
-          <CommiteeCard key={commitee.name} {...commitee} />
+        {committees.map((committee) => (
+          <CommitteeCard key={committee.name} {...committee} />
         ))}
       </div>
     </div>
