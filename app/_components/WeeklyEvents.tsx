@@ -1,4 +1,4 @@
-import fetchPhotos from '../_api/flickrUtils';
+import fetchPhotos from '../api/flickrUtils';
 import WeeklyEventsClient from './WeeklyEventsClient';
 
 export default async function WeeklyEvents() {
