@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
-import type { FlickrPhoto } from '../_api/flickrUtils';
+import type { FlickrPhoto } from '../api/flickrUtils';
 
 export default function FlickrCarouselClient({ photos }: { photos: FlickrPhoto[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,13 +36,14 @@ export default function FlickrCarouselClient({ photos }: { photos: FlickrPhoto[]
           alt="Flickr Photo"
           className="h-full object-contain drop-shadow-[0_4px_3px_rgba(0,0,0,.5)] select-none"
           quality={100}
-          sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           fill
         />
-        <div className={`absolute inset-0 ${index < currentIndex && 'bg-gradient-to-l'} ${
-             index > currentIndex && 'bg-gradient-to-r'
-           } from-transparent to-[#cceaff]`}
-        /> 
+        <div
+          className={`absolute inset-0 ${index < currentIndex && 'bg-gradient-to-l'} ${
+            index > currentIndex && 'bg-gradient-to-r'
+          } from-transparent to-[#cceaff]`}
+        />
       </motion.div>
     );
   }

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { FlickrPhoto } from '../_api/flickrUtils';
+import { FlickrPhoto } from '../api/flickrUtils';
 import Image from 'next/image';
 
 export default function WeeklyEventsClient({ photos }: { photos: FlickrPhoto[] }) {

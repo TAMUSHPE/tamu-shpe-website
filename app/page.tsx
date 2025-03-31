@@ -24,7 +24,7 @@ export default function Home() {
           <InvolvementBox />
         </div>
 
-        <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10">
+        <div className="relative flex flex-col md:flex-row items-center gap-5 lg:gap-10">
           <WeeklyEvents />
 
           <Pillars />
