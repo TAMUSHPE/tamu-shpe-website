@@ -18,8 +18,8 @@ export default function Involvement() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
             {/* National Registration Steps */}
             <div className="bg-[#BADEFF] w-full h-full md:col-span-1 text-left p-3 flex flex-col gap-2">
-              <h1 className="text-md text-left font-extrabold"> SHPE National Registration </h1>
-              <ul className="list-none list-inside text-left text-sm pl-8">
+              <h1 className="text-md text-left font-extrabold"> SHPE National Registration (Renew Each Calendar Year) </h1>
+              <ul className="flex flex-col grow justify-between list-none list-inside text-left text-sm pl-8">
                 <li className="-indent-4">
                   {' '}
                   1. Go to the{' '}
@@ -41,15 +41,13 @@ export default function Involvement() {
                 </li>
                 <li className="-indent-4"> 4. Agree to the Code of Ethics and add the Membership to your cart. </li>
                 <li className="-indent-4"> 5. Pay for the membership. </li>
-                <li className="-indent-4"> 6.<b>Screenshot</b> payment confirmation.</li>
-                <li className="-indent-4 font-extrabold">National membership must be renewed annually!</li>
+                <li className="-indent-4"> 6. <b>Screenshot</b> payment confirmation.</li>
               </ul>
-              
             </div>
             <div className="flex flex-col gap-4">
               {/* Chapter Registration Steps */}
-              <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2">
-                <h1 className="text-md text-left font-extrabold"> TAMU Chapter Registration </h1>
+              <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2 flex flex-col">
+                <h1 className="text-md text-left font-extrabold"> TAMU Chapter Registration (Renew Each Academic Year) </h1>
                 <ul className="list-none list-inside text-left text-sm pl-8">
                   <li className="-indent-4">
                     {' '}
@@ -75,11 +73,10 @@ export default function Involvement() {
                     </span>{' '}
                     <b>Use non-tamu email to access form.</b>
                   </li>
-                  <li className="-indent-4 font-extrabold">Chapter membership must be renewed at the beginning of the school year!</li>
                 </ul>
               </div>
               <div className="bg-[#BADEFF] w-full max-h-min md:col-span-1 text-left p-3 gap-2">
-                <h1 className='text-center font-extrabold text-2xl'>Screenshots must be uploaded onto the SHPE mobile app!</h1>
+                <h1 className='text-center font-extrabold text-xl'>Screenshots must be uploaded onto the TAMU SHPE mobile app!</h1>
               </div>
 
 
