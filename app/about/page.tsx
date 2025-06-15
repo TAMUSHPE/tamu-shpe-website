@@ -69,7 +69,8 @@ export default function About() {
             </p>
           </div>
           <Link
-            href="/pdf/SHPE Constitution 2023-2024.pdf"
+            href="/pdf/TAMU SHPE Constitution 25-26.pdf"
+            target="_blank"
             className="text-lg rounded-xl place-self-end bg-[#732F2F] text-white px-8 py-3"
           >
             Bylaws & Constitution
