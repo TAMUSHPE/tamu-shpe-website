@@ -70,9 +70,6 @@ export default function Calendar() {
               borderColor: '#C1E1C1',
             },
             {
-              googleCalendarId: '53nqem8d49pgg752j8jg0idrmc@group.calendar.google.com',
-            },
-            {
               googleCalendarId: 'otmmlpi343epdcvioo9k5nu0q0@group.calendar.google.com',
             },
             {
