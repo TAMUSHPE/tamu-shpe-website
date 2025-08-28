@@ -65,9 +65,10 @@ export default function Calendar() {
               googleCalendarId: 'p19dmac1ih22so1f44adj7uc48@group.calendar.google.com',
             },
             {
-              googleCalendarId: 'qseipl2jkfh4kd1jimnk0e3600@group.calendar.google.com',
-              backgroundColor: '#C1E1C1',
-              borderColor: '#C1E1C1',
+              //External Affairs calendar
+              // googleCalendarId: 'qseipl2jkfh4kd1jimnk0e3600@group.calendar.google.com',
+              // backgroundColor: '#C1E1C1',
+              // borderColor: '#C1E1C1',
             },
             {
               googleCalendarId: 'otmmlpi343epdcvioo9k5nu0q0@group.calendar.google.com',
