@@ -9,7 +9,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'tamu.estore.flywire.com',
+        hostname: 'sofctamu.estore.flywire.com',
         port: '',
       }
     ],

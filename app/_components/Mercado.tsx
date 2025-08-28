@@ -11,7 +11,7 @@ interface MercadoItem {
 export const revalidate = 604800; // 7 days (604800 seconds)
 
 async function fetchFlywireItems(): Promise<MercadoItem[]> {
-  const res = await fetch('https://tamu.estore.flywire.com/products?storeCatalog=5935');
+  const res = await fetch('https://sofctamu.estore.flywire.com/products?storeCatalog=23327');
   if (!res.ok) {
     throw new Error('Failed to fetch Mercado data. Status: ' + res.status);
   }
@@ -23,8 +23,8 @@ async function fetchFlywireItems(): Promise<MercadoItem[]> {
     items.push({
       title: $(item).find('.product-title').text(),
       price: parseFloat($(item).find('.price').text().replace('$', '')),
-      image: 'https://tamu.estore.flywire.com' + $(item).find('.card-image').find('img').attr('src') || '/gm.svg',
-      link: 'https://tamu.estore.flywire.com' + $(item).find('a').attr('href') || '/',
+      image: 'https://sofctamu.estore.flywire.com' + $(item).find('.card-image').find('img').attr('src') || '/gm.svg',
+      link: 'https://sofctamu.estore.flywire.com' + $(item).find('a').attr('href') || '/',
     });
   });
   return items;
