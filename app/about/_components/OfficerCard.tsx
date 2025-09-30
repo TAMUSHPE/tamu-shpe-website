@@ -27,7 +27,7 @@ export default function OfficerCard(props: {
   return (
     <div onClick={handleFlip} className="cursor-pointer h-96 w-56 rounded-xl shrink-0" style={{ perspective: '1000px' }}>
       <motion.div
-        className="w-full h-full bg-[#1870B8] shrink-0 rounded-xl "
+        className="w-full h-full bg-[#000000] shrink-0 rounded-xl "
         initial={false}
         animate={{ rotateY: isFlipped ? 180 : 360 }}
         transition={{ duration: 0.5, animationDirection: 'normal' }}
