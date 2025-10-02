@@ -77,7 +77,7 @@ export default function About() {
           </Link>
         </div>
 
-        <OfficerCards />
+        <OfficerCards/>
       </main>
     </div>
   );

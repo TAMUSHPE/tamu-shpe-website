@@ -25,7 +25,7 @@ export default function OfficerCard(props: {
   }
 
   return (
-    <div onClick={handleFlip} className="cursor-pointer h-96 w-56 rounded-xl shrink-0" style={{ perspective: '1000px' }}>
+    <div onClick={handleFlip} className="cursor-pointer h-96 w-60 rounded-xl shrink-0" style={{ perspective: '1000px' }}>
       <motion.div
         className="w-full h-full bg-[#000000] shrink-0 rounded-xl "
         initial={false}
@@ -36,18 +36,20 @@ export default function OfficerCard(props: {
       >
         {/* Card Front */}
         <div
-          className="px-3 py-6 w-full h-full absolute flex flex-col items-center justify-between text-center gap-2 shadow-[6px_7px_5px_0px_rgba(0,_0,_0,_0.25)] rounded-xl"
+          className="px-3 py-4 w-full h-full absolute flex flex-col items-center justify-between text-center gap-2 shadow-[6px_7px_5px_0px_rgba(0,_0,_0,_0.25)] rounded-xl"
           style={{ backfaceVisibility: 'hidden' }}
         >
-          <p className="text-white content-center">{props.position}</p>
-          <div className="relative w-36 h-56 items-start">
-            <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top rounded-lg" fill />
-          </div>
-          <div className="flex flex-col justify-center items-center w-full">
-            <h3 className="text-white text-xl">{props.name}</h3>
-            <p className="text-white text-sm">
-              {props.major} {props.year}&apos;
-            </p>
+          <div className = "h-full w-full bg-black border border-white rounded-xl flex flex-col items-center justify-center gap-2 p-3">
+              <p className="text-white content-center">{props.position}</p>
+            <div className="relative w-36 h-56 items-start">
+              <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top rounded-lg" fill />
+            </div>
+            <div className="flex flex-col justify-center items-center w-full">
+              <h3 className="text-white text-xl">{props.name}</h3>
+              <p className="text-white text-sm">
+                {props.major} {props.year}&apos;
+              </p>
+            </div>
           </div>
         </div>
 

@@ -95,13 +95,10 @@ export default function OfficerCards() {
   ];
 
   return (
-    <div className="h-fit bg-[#FD652F] w-full p-5">
-      <h2 className="text-white text-3xl mb-3">Our Executive Board</h2>
-      <div className="flex w-full bg-[#D43F27] p-5 overflow-x-scroll overflow-y-hidden gap-5 rounded-lg">
+      <div className="flex w-full p-5 gap-5 ">
         {officers.map((officer) => {
           return <OfficerCard key={officer.name} {...officer} />;
         })}
       </div>
-    </div>
   );
 }
