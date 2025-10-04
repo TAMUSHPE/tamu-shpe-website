@@ -8,9 +8,9 @@ export default function OfficerCards() {
       major: 'Industrial Distribution',
       year: '25',
       img: '/officers/president_headshot.jpg',
-      quote:
-        "Failure isn't the opposite of success - it's part of it.",
-      img2: '/officers/president_img2.jpg',
+      bio: "Howdy SHPE Familia! My name is Marianne Bautista, and I am from Laredo, Texas. I'm a senior and love process optimization and supply chain management (Major in Industrial Distribution)! Sports, the outdoors, music, and food is pretty much all it takes to make me happy!",
+      quote: "\"Failure isn't the opposite of success - it's part of it.\"",
+      linkedin:"https://www.linkedin.com/in/marianne--bautista/",
     },
     {
       name: 'Andy Cano-Avila',
@@ -18,19 +18,19 @@ export default function OfficerCards() {
       major: 'Mechanical Engineering',
       year: '26',
       img: '/officers/vp_headshot.jpg',
-      quote:
-        "Dont be upset when you have a lot on your plate, your goal was to eat",
-      img2: '/officers/vp_img2.jpg',
+      bio: "Howdy! My name is Andy Cano-Avila, and I'm a Mechanical Engr major in the class of ‘26. I was born and raised in Katy, Tx. I enjoy playing different sports and rock climbing. Music is a big part of my day to day so please send me recommendations.",
+      quote: "\"Dont be upset when you have a lot on your plate, your goal was to eat\"",
+      linkedin:"https://www.linkedin.com/in/andy-cano-avila/",
     },
     {
       name: 'Joelda Alcaraz',
       position: 'Secretary',
       major: 'Civil Engineering',
       year: '27',
-      img: '/officers/secretary_headshot.jpg',
-      quote:
-        "Cada día es una nueva página en tu historia, escribe algo increíble.",
-      img2: '/officers/secretary_img2.jpg',
+      img: '/officers/secretary_headshot.jpeg?v=1',
+      bio:"Howdy!! My name is Joelda Alcaraz, and I am a Civil Engineering major in the Class of ‘27. I was born and raised in Del Rio, Texas. In my free time, I enjoy playing golf, attending hot yoga/pilates classes, painting, and traveling to new places with my friends and family.",
+      quote: "\"Cada día es una nueva página en tu historia, escribe algo increíble.\"",
+      linkedin:"https://www.linkedin.com/in/joelda-alcaraz/",
     },
     {
       name: 'Jonathan Rodezno',
@@ -38,64 +38,64 @@ export default function OfficerCards() {
       major: 'Industrial Distribution',
       year: '26',
       img: '/officers/treasurer_headshot.jpg',
-      quote:
-        "Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present - Master Oogway",
-      img2: '/officers/treasurer_img2.jpg',
+      bio:"Howdy! My name is Jonathan Rodezno, I'm a Senior Industrial Distribution Major from Santa Tecla, El Salvador! I love being outdoors exploring new places, meeting new people, and fútbol!",
+      quote: "\"Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present\" - Master Oogway",
+      linkedin:"https://www.linkedin.com/in/jonathan-rodezno/",
     },
     {
       name: 'Alvaro Camacho',
       position: 'Director of Technical Affairs',
       major: 'Electrical Engineering',
       year: '26',
-      img: '/officers/tech_headshot.jpg',
-      quote:
-        "Tell me and I forget, teach me and I may remember, involve me and I learn - Benjamin Franklin",
-      img2: '/officers/tech_img2.jpg',
+      img: '/officers/DOTA_headshot.jpeg',
+      bio:"Howdy! My name is Alvaro Camacho and I am a Junior Electrical Engineering major from Katy Texas! In my free time I like to play and watch futbol, play video games, golf, or salsa dance! Feel free to talk to me about all sorts of sports and music! I love talking about new things!",
+      quote:"\"Tell me and I forget, teach me and I may remember, involve me and I learn\" - Benjamin Franklin",
+      linkedin:"https://www.linkedin.com/in/alvarojcamachoh/",
     },
     {
       name: 'Ivan Cardenas',
       position: 'Director of Public Relations',
       major: 'Industrial Distribution',
       year: '27',
-      img: '/officers/pr_headshot.jpg',
-      quote:
-        "If the hurt comes so will the happiness -be patient - Rupi Kaur",
-      img2: '/officers/pr_img2.jpg',
+      img: '/officers/PR_headshot.jpeg',
+      bio:"Howdy! My name is Ivan Cardenas! I'm a junior Industrial Distribution major from Laredo, Texas! Reading, painting and listening to music makes me happy! Currently, I'm Murder On The Dance Floor by Sophie Ellis-Bextor is on loop!",
+      quote:"\"If the hurt comes so will the happiness -be patient\" - Rupi Kaur",
+      linkedin:"https://www.linkedin.com/in/ivan-cardenas-886439326/",
     },
     {
       name: 'Anthony Santamaria Galindo',
       position: 'Director of Internal Affairs',
       major: 'Aerospace Engineering',
       year: '27',
-      img: '/officers/internal_headshot.jpg',
-      quote:
-        "Ponte las pilas - momma",
-      img2: '/officers/internal_img2.jpg',
+      img: '/officers/IA_headshot.jpg',
+      bio:"Howdy! My name is Anthony Santamaria Galindo, and I'm an Aerospace Engineering major in the Class of '27. I'm from Plano, Texas. I'm usually at the gym, playing sports, or pretending I know what I'm doing in the kitchen. If you ever need a workout buddy or just someone to hype you up on leg day, hit me up!",
+      quote:"\"Ponte las pilas\" - momma",
+      linkedin:"https://www.linkedin.com/in/anthony-sg/",
     },
     {
       name: 'Alejandra Patlan',
       position: 'Director of External Affairs',
       major: 'Manufacturing Engineering',
       year: '27',
-      img: '/officers/external_headshot.jpg',
-      quote:
-        "Youth is something I never wanna take for granted. I just want to smile and live life. - Tyler, The Creator",
-      img2: '/officers/external_img2.jpg',
+      img: '/officers/EA_headshot.jpeg',
+      bio:"Howdy! My name is Alejandra Patlan. I was born in McAllen, Texas, and I'm a Manufacturing Engineering major, Class of 2027! I love riding my bike around campus and trying out new recipes. If you have any questions, feel free to reach out!",
+      quote:"\"Youth is something I never wanna take for granted. I just want to smile and live life.\" - Tyler, The Creator",
+      linkedin:"https://www.linkedin.com/in/alejandra-patlan/",
     },
     {
       name: 'Oscar Rios',
       position: 'Director of Academic Development',
       major: 'Chemical Engineering',
       year: '28',
-      img: '/officers/ad_headshot.jpg',
-      quote:
-        "I believe success is achieved by ordinary people with extraordinary determination. - Zig Ziglar",
-      img2: '/officers/ad_img2.jpg',
+      img: '/officers/AD_headshot.jpeg',
+      bio:"Howdy! My name is Oscar Rios, and I'm a Chemical Engineering major in the Class of '28. I'm from Kingwood, Texas — a town just north of Houston. I love going to the gym, playing pickleball, and binge-watching shows. I'm excited to meet new people and make lots of friends this year!",
+      quote:"\"I believe success is achieved by ordinary people with extraordinary determination.\" - Zig Ziglar",
+      linkedin:"https://www.linkedin.com/in/oscar-rios-33316b278/",
     },
   ];
 
   return (
-      <div className="flex w-full p-5 gap-5 ">
+      <div className="grid grid-cols-3 gap-20 p-4 w-full ">
         {officers.map((officer) => {
           return <OfficerCard key={officer.name} {...officer} />;
         })}

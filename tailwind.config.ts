@@ -26,6 +26,10 @@ const config: Config = {
         'running' : 'running',
         'paused' : 'paused',
       },
+      fontFamily: {
+      helvetica: ['Helvetica', 'Arial', 'sans-serif'], // <--- add this here
+      roboto: ['Roboto', 'sans-serif'],               // optional extra font
+    },
     },
   },
   plugins: [
