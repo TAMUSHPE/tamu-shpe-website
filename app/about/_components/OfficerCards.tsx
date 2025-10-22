@@ -13,6 +13,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/marianne--bautista/",
       linktree:"https://linktr.ee/marianneb090",
       email:"marianneb090@tamu.edu",
+      location: "Laredo,TX",
     },
     {
       name: 'Andy Cano-Avila',
@@ -25,6 +26,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/andy-cano-avila/",
       linktree:"https://linktr.ee/andycano10",
       email:"andycano10@tamu.edu",
+      location: "Katy,TX",
     },
     {
       name: 'Joelda Alcaraz',
@@ -37,6 +39,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/joelda-alcaraz/",
       linktree:"https://linktr.ee/joeldaalcaraz",
       email:"joelda-8145@tamu.edu",
+      location: "Del Rio,TX",
     },
     {
       name: 'Jonathan Rodezno',
@@ -49,6 +52,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/jonathan-rodezno/",
       linktree:"https://linktr.ee/Jonathan__R",
       email:"jonathan1417@tamu.edu",
+      location: "Santa Tecla,Salvador",
     },
     {
       name: 'Alvaro Camacho',
@@ -61,6 +65,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/alvarojcamachoh/",
       linktree:"https://linktr.ee/alvaro.j.camacho.h",
       email:"alvarojcamacho0718@tamu.edu",
+      location: "Katy,TX",
     },
     {
       name: 'Ivan Cardenas',
@@ -73,6 +78,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/ivan-cardenas-886439326/",
       linktree:"https://linktr.ee/ivancardena5",
       email:"ivancardenas@tamu.edu",
+      location: "Laredo,TX",
     },
     {
       name: 'Anthony Santamaria Galindo',
@@ -85,6 +91,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/anthony-sg/",
       linktree:"https://linktr.ee/Anthonysg",
       email:"asantamaria4@tamu.edu",
+      location: "Plano,TX",
     },
     {
       name: 'Alejandra Patlan',
@@ -97,6 +104,7 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/alejandra-patlan/",
       linktree:"https://linktr.ee/ale.patlan",
       email:"ale_nat_patlan13@tamu.edu",
+      location: "McAllen,TX",
     },
     {
       name: 'Oscar Rios',
@@ -109,11 +117,12 @@ export default function OfficerCards() {
       linkedin:"https://www.linkedin.com/in/oscar-rios-33316b278/",
       linktree:"https://linktr.ee/oscar.rios05",
       email:"oscarsrios4615@tamu.edu",
+      location: "Kingwood,TX",
     },
   ];
 
   return (
-      <div className="flex flex-wrap justify-center gap-3">
+      <div className="grid grid-cols-3 gap-4 place-items-center">
         {officers.map((officer) => {
           return <OfficerCard key={officer.name} {...officer} />;
         })}
