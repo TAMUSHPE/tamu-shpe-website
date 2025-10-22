@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import emailjs from '@emailjs/browser'
 
 export default function OfficerCard(props: {
   name: string;
@@ -19,7 +18,6 @@ export default function OfficerCard(props: {
 }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
 
   function handleFlip() {
     if (!isAnimating) {
