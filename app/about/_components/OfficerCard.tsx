@@ -51,10 +51,10 @@ export default function OfficerCard(props: {
                 <h3 className="text-white text-lg font-bold">{props.name}</h3>
                 <p className="text-white content-center text-m ">{props.position}</p>
                 <div className="flex w-full mt-2 justify-center gap-2">
-                  <a href={props.linkedin} target="_blank" className=" w-9 h-9 flex items-center justify-center bg-white text-white rounded-full hover:bg-gray-500 transition">
+                  <a href={props.linkedin} target="_blank" className=" w-9 h-9 flex items-center justify-center bg-white text-white rounded-full hover:bg-gray-500 transition" onClick={(e) => e.stopPropagation()}>
                     <Image src="/logos/black_linkedin.png" alt="Linkedin" width={20} height={20} />
                   </a>
-                  <a href={props.linktree} target="_blank" className=" w-9 h-9 flex items-center justify-center bg-white text-white rounded-full hover:bg-gray-500 transition">
+                  <a href={props.linktree} target="_blank" className=" w-9 h-9 flex items-center justify-center bg-white text-white rounded-full hover:bg-gray-500 transition" onClick={(e) => e.stopPropagation()}>
                     <Image src="/logos/black_linktree.png" alt="Linktree" width={20} height={20} />
                   </a>
 
@@ -62,7 +62,7 @@ export default function OfficerCard(props: {
                     href={`https://mail.google.com/mail/?view=cm&fs=1&to=${props.email}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-white rounded-full hover:bg-gray-500 transition"
+                    className="w-9 h-9 flex items-center justify-center bg-white rounded-full hover:bg-gray-500 transition" onClick={(e) => e.stopPropagation()}
                   >
                     <Image src="/logos/black_mail.png" alt="Mail" width={20} height={20} />
                   </a>
