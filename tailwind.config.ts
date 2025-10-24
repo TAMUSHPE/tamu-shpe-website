@@ -14,23 +14,35 @@ const config: Config = {
         foreground: 'var(--foreground)',
       },
       animation: {
-        infiniteScroll : 'infiniteScroll 30s linear infinite',
+        infiniteScroll: 'infiniteScroll 30s linear infinite',
       },
       keyframes: {
-        infiniteScroll : {
-          from : {transform: 'translateX(0%)'},
-          to : {transform : 'translateX(-100%)'},
+        infiniteScroll: {
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-100%)' },
         },
       },
       animatedPlayState: {
-        'running' : 'running',
-        'paused' : 'paused',
+        'running': 'running',
+        'paused': 'paused',
+      },
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+      fontFamily: {
+        helvetica: ['Helvetica', 'Arial', 'sans-serif'], // <--- add this here
+        roboto: ['Roboto', 'sans-serif'],               // optional extra font
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
   plugins: [
 
-    plugin(function({addUtilities}) { 
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         '.paused': {
           'animation-play-state': 'paused',
