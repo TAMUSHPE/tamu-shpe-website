@@ -5,35 +5,43 @@ import Link from 'next/link';
 export default function About() {
   return (
     <div className="h-full overflow-auto">
-      <main className="container mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
+      <main className="w-full h-full">
         {/* Chapter Focus */}
-        <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12">
-          <div
-            className="
-          flex flex-col h-fit w-full p-5 gap-3 border-8 border-[#732F2F] md:col-span-7"
-          >
-            <section>
-              <h2 className="text-3xl pb-2 text-[#500000]">Our Mission</h2>
-              <p className="text-lg">
-                Enhance opportunities for personal and professional growth through social and academic responsibilities
-                while holding true to the Aggie spirit.
-              </p>
+        <section className="bg-gradient-to-br from-violet-900 to-red-900 py-20 px-8">
+          <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Text Column */}
+            <section className="p-6 md:p-8">
+              <div className = "bg-gray-500 bg-opacity-50 p-3 md:p-5 rounded-2xl mb-3 md:mb-6 ">
+                <h2 className="text-3xl pb-2 text-white font-bold">Our Mission</h2>
+                <p className="text-lg text-white">
+                  Enhance opportunities for personal and professional growth through social and academic responsibilities while holding true to the Aggie spirit.
+                </p>
+              </div>
+              <div className = "bg-gray-500 bg-opacity-50 p-3 md:p-5 rounded-2xl ">
+                <h2 className="text-3xl pb-2 text-white font-bold">Our Vision</h2>
+                <p className="text-lg text-white">
+                  We’re here to empower Hispanic Aggies to grow into confident leaders and innovators in STEM. Our vision is a future where Hispanic voices are heard, our ideas shape the world, and our community supports each other every step of the way. Together we’re building a space where everyone can thrive, lead, and make a real difference in our campus, our careers, and our communities.
+                </p>
+              </div>
             </section>
-            <section>
-              <h2 className="text-3xl pb-2 text-[#500000]">Our Vision</h2>
-              <p className="text-lg">Lead and Prepare all Aggies in their Profession.</p>
+
+            {/* Image Column */}
+            <section className="relative overflow-hidden rounded-xl p-6 md:p-8 min-h-[50vh] md:min-h-[70vh] border-4 border-white">
+              <Image src="/about/national.jpg" alt="Chapter Focus" fill className = "object-cover"/>
             </section>
+
           </div>
+        </section>
+
+        <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12 ">
           <div className="relative h-72 w-full items-start md:col-span-4 md:col-start-9">
-            <Image src="/about/chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill priority/>
+            <Image src="/about/chapter.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill priority />
           </div>
         </div>
 
         {/* National Focus */}
         <div className="grid items-center place-items-center gap-4 md:gap-0 md:grid-cols-12">
-          <div className="relative h-72 w-full items-start md:col-span-4">
-            <Image src="/about/national.jpg" alt="Chapter Focus" className="h-full w-full object-cover" fill priority/>
-          </div>
           <div className="flex flex-col h-fit w-full p-5 gap-3 border-8 border-[#D33A02] md:col-span-7 md:col-start-6">
             <section>
               <h2 className="text-3xl pb-2 text-[#FD652F]">National Mission</h2>
@@ -77,7 +85,7 @@ export default function About() {
           </Link>
         </div>
 
-        <OfficerCards/>
+        <OfficerCards />
       </main>
     </div>
   );
