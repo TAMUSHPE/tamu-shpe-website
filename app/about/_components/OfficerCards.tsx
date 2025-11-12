@@ -122,7 +122,7 @@ export default function OfficerCards() {
   ];
 
   return (
-      <div className="grid gap-4 place-items-center mb-10 grid-cols-[repeat(auto-fit,minmax(290px,1fr))]">
+      <div className="grid gap-4 place-items-center mb-10 grid-cols-[repeat(auto-fit,minmax(290px,1fr))] lg:grid-cols-3">
         {officers.map((officer) => {
           return <OfficerCard key={officer.name} {...officer} />;
         })}

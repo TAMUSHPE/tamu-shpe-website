@@ -40,7 +40,7 @@ export default function OfficerCard(props: {
         >
           {/* Card Front */}
           <div
-            className="bg-black absolute inset-0 px-3 py-4 w-full h-full flex flex-col items-center justify-between text-center gap-2 rounded-3xl overflow-hidden shadow-[6px_7px_5px_0px_rgba(0,_0,_0,_0.25)] transform hover:scale-105 transition-transform ease-in-out duration-300"
+            className="bg-black absolute inset-0 px-3 py-4 w-full h-full flex flex-col items-center justify-between text-center gap-2 rounded-3xl overflow-hidden shadow-[6px_7px_5px_0px_rgba(0,_0,_0,_0.25)]"
             style={{ backfaceVisibility: 'hidden' }}
           >
             <div className="h-full w-full bg-black border border-white border-[3.5px] rounded-3xl flex flex-col items-center justify-center gap-2 p-1 bg-black">
