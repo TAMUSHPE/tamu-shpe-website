@@ -1,4 +1,8 @@
+'use client'; // I added this, required for React state/hooks
+
 import Image from 'next/image';
+import React, { useState } from 'react';         // added — useState for modal control
+import CommitteeModal from './CommitteeModal';   //added — import the modal
 
 export default function CommitteesCards() {
   const commitees = [
@@ -36,7 +40,13 @@ export default function CommitteesCards() {
       name: 'Technical Affairs',
       img: '/committees/tech.jpg',
       description:
-        'The Technical Affairs Committee is responsible for providing technical workshops and resources to members.',
+        `The Technical Affairs Committee is responsible for guiding the development,
+         implementation, and oversight of technical standards and practices. 
+         It supports innovation, ensures technical activities align with the organization's goals, 
+         and provides expert advice to enhance efficiency, quality, and strategic decision-making.`,
+      meets: 'Tuesdays or Thursdays',
+      location: 'Zach',
+      openTo: 'All members',
     },
     {
       name: 'Scholastic',
@@ -73,25 +83,64 @@ export default function CommitteesCards() {
     },
   ];
 
-  function CommiteeCard(props: { name: string; img: string; description: string }) {
+  // added — state to store selected committee plus modal visibility
+  const [selected, setSelected] = useState<any>(null);
+  const [open, setOpen] = useState(false);
+
+  // added — function that opens the modal with selected committee data
+  const handleClick = (committee: any) => {
+    setSelected(committee);
+    setOpen(true);
+  };
+
+  // modified — added onClick prop to open modal when clicked
+  function CommiteeCard(props: {
+    name: string;
+    img: string;
+    description: string;
+    onClick: () => void;
+  }) {
     return (
-      <div className="bg-orange-600 w-52 h-72 pt-2 pb-5 rounded-xl flex flex-col shrink-0 justify-center items-center gap-2">
+      <button
+        onClick={props.onClick}
+        className="bg-orange-600 w-52 h-72 pt-2 pb-5 rounded-xl flex flex-col shrink-0 justify-center items-center gap-2 
+                   hover:shadow-lg transition cursor-pointer"
+      >
         <div className="relative h-full w-[90%]">
-          <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top rounded-lg" fill />
+          <Image
+            src={props.img}
+            alt={props.name}
+            className="h-full w-full object-cover object-top rounded-lg"
+            fill
+          />
         </div>
         <h2 className="text-xl font-semibold text-center">{props.name}</h2>
-      </div>
+      </button>
     );
   }
 
   return (
     <div className="w-full">
-      <h1 className="text-2xl text-left font-semibold mb-5"> Check out our Committees! </h1>
-      <div className="flex flex-row flex-wrap gap-8">
+      <h1 className="text-2xl text-left font-semibold mb-5">Check out our Committees!</h1>
+
+      {/* modified — pass handleClick to each card */}
+      <div className="flex flex-row flex-wrap gap-8">  
         {commitees.map((commitee) => (
-          <CommiteeCard key={commitee.name} {...commitee} />
+          <CommiteeCard
+            key={commitee.name}
+            {...commitee}
+            onClick={() => handleClick(commitee)} //  triggers modal open
+          />
         ))}
       </div>
+
+      {/* added — render the modal */}
+      <CommitteeModal
+        open={open}
+        onClose={() => setOpen(false)} // closes the modal
+        committee={selected}          // passes selected committee info
+      />
     </div>
   );
 }
+
