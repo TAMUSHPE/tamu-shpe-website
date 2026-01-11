@@ -8,10 +8,12 @@ import InvolvementBox from './_components/InvolvementBox';
 import Mercado from './_components/Mercado';
 import WeeklyEvents from './_components/WeeklyEvents';
 import PointsTable from './_components/PointsTable';
+import Hero from './_components/Hero';
 
 export default function Home() {
   return (
     <div className="h-full">
+      <Hero />
       <main className="container mx-auto px-4 md:px-10 grid grid-cols-1 gap-8">
         <div className="grid items-center place-items-center grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
           {/* SHPE Logo */}
