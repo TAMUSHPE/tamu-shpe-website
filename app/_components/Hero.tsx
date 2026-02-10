@@ -14,7 +14,7 @@ export default function Hero() {
             />
 
             {/* Black Gradiaent front left to right */}
-            <div className='absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/50' />
+            <div className='absolute inset-0 bg-gradient-to-r from-black from-0% via-black/100 via-0% to-black/50' />
 
             {/* Content inside of the hero box */}
             <div className='relative z-10 flex flex-col h-full justify-center ml-24'>
