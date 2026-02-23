@@ -8,6 +8,7 @@ import InvolvementBox from './_components/InvolvementBox';
 import Mercado from './_components/Mercado';
 import WeeklyEvents from './_components/WeeklyEvents';
 import PointsTable from './_components/PointsTable';
+import ThanksToOurSponsors from './_components/ThanksToOurSponsors';
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
         </div>
 
         <Calendar />
+        <ThanksToOurSponsors />
       </main>
     </div>
   );
