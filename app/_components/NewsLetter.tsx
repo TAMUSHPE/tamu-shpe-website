@@ -20,7 +20,7 @@ export default function NewsletterBox({ signupUrl }: NewsletterBoxProps) {
       <div className="p-6">
         <div className="overflow-hidden rounded-xl">
           <Image
-            src="SHPE newsletter.png"
+            src="/SHPE_NEWSLETTER.png"
             alt="SHPE Newsletter"
             width={900}
             height={700}
