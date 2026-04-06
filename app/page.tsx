@@ -55,7 +55,6 @@ export default function Home() {
         </div>
 
         <Calendar />
-        <NewsletterBox signupUrl="https://preview.mailerlite.io/forms/645055/163550655240209963/share" />
       </main>
     </div>
   );

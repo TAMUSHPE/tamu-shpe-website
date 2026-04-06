@@ -1,5 +1,8 @@
 'use client';
 
+//<NewsletterBox signupUrl="https://preview.mailerlite.io/forms/645055/163550655240209963/share" />
+//import for the home page
+
 type NewsletterBoxProps = {
   signupUrl?: string;
 };
