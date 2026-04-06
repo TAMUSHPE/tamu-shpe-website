@@ -9,6 +9,7 @@ import Mercado from './_components/Mercado';
 import WeeklyEvents from './_components/WeeklyEvents';
 import PointsTable from './_components/PointsTable';
 import Hero from './_components/Hero';
+import NewsletterBox from './_components/NewsLetter';
 
 export default function Home() {
   return (
