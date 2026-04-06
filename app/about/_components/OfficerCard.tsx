@@ -43,7 +43,7 @@ export default function OfficerCard(props: {
             className="bg-black absolute inset-0 px-3 py-4 w-full h-full flex flex-col items-center justify-between text-center gap-2 rounded-3xl overflow-hidden shadow-[6px_7px_5px_0px_rgba(0,_0,_0,_0.25)] transform hover:scale-105 transition-transform ease-in-out duration-300"
             style={{ backfaceVisibility: 'hidden' }}
           >
-            <div className="h-full w-full bg-black border border-white border-[3.5px] rounded-3xl flex flex-col items-center justify-center gap-2 p-1 bg-black">
+            <div className="h-full w-full bg-black border border-white rounded-3xl flex flex-col items-center justify-center gap-2 p-1">
               <div className="relative w-36 h-56 items-start">
                 <Image src={props.img} alt={props.name} className="h-full w-full object-cover object-top rounded-lg" fill />
               </div>
@@ -73,10 +73,10 @@ export default function OfficerCard(props: {
 
           {/* Card Back */}
           <div
-            className=" bg-black absolute inset-0 px-3 py-4 h-full w-full flex flex-col items-center justify-center text-center bg-black rounded-3xl shadow-[6px_7px_5px_rgba(0,0,0,0.25)]"
+            className=" bg-black absolute inset-0 px-3 py-4 h-full w-full flex flex-col items-center justify-center text-center rounded-3xl shadow-[6px_7px_5px_rgba(0,0,0,0.25)]"
             style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
           >
-            <div className=" bg-black h-full w-full bg-black border border-white border-[3px] rounded-xl flex flex-col items-center justify-between p-2">
+            <div className=" bg-black h-full w-full border-white border-[3px] rounded-xl flex flex-col items-center justify-between p-2">
               <div className="mt-4 flex flex-col items-center">
                 <Image src="/logos/location.png" alt="location" width={30} height={30} />
                 <p className="text-white text-[8px] font-semibold">{props.location}</p>
