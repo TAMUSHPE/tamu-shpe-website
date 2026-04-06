@@ -8,7 +8,6 @@ import InvolvementBox from './_components/InvolvementBox';
 import Mercado from './_components/Mercado';
 import WeeklyEvents from './_components/WeeklyEvents';
 import PointsTable from './_components/PointsTable';
-import ThanksToOurSponsors from './_components/ThanksToOurSponsors';
 import Hero from './_components/Hero';
 
 export default function Home() {
@@ -53,9 +52,7 @@ export default function Home() {
           <PointsTable />
           <Mercado />
         </div>
-
         <Calendar />
-        <ThanksToOurSponsors />
       </main>
     </div>
   );
