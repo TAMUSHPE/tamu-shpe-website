@@ -53,7 +53,6 @@ export default function Home() {
           <PointsTable />
           <Mercado />
         </div>
-
         <Calendar />
       </main>
     </div>

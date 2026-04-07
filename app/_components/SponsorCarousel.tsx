@@ -23,6 +23,9 @@ const sponsors = [
 
 export default function Sponsors() {
   return (
+    <div className="mt-24">
+      {/* Section title */}
+      <h2 className="text-[50px] font-bold mb-6 text-center">Thank you to our sponsors...</h2>
     <div className="w-full inline-flex flex-nowrap overflow-hidden group [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused">
         {sponsors.map((sponsor, index) => (
@@ -54,5 +57,7 @@ export default function Sponsors() {
         ))}
       </ul>
     </div>
+  </div>
   );
 }
+
