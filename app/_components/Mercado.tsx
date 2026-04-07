@@ -1,5 +1,5 @@
-import * as cheerio from 'cheerio';
-import MercadoClient from './MercadoClient';
+import * as cheerio from "cheerio";
+import MercadoClient from "./MercadoClient";
 
 interface MercadoItem {
   title: string;
@@ -8,30 +8,42 @@ interface MercadoItem {
   link: string;
 }
 
-export const revalidate = 604800; // 7 days (604800 seconds)
+export const revalidate = 604800; // 7 days
 
 async function fetchFlywireItems(): Promise<MercadoItem[]> {
-  const res = await fetch('https://sofctamu.estore.flywire.com/products?storeCatalog=23327');
+  const res = await fetch(
+    "https://sofctamu.estore.flywire.com/products?storeCatalog=23327",
+  );
+
   if (!res.ok) {
-    throw new Error('Failed to fetch Mercado data. Status: ' + res.status);
+    throw new Error("Failed to fetch Mercado data. Status: " + res.status);
   }
+
   const html = await res.text();
   const $ = cheerio.load(html);
 
   const items: MercadoItem[] = [];
-  $('.card-product').each((index: number, item: cheerio.Element) => {
+
+  $(".card-product").each((index: number, item: cheerio.Element) => {
+    const title = $(item).find(".product-title").text().trim();
+    const priceText = $(item).find(".price").text().trim().replace("$", "");
+    const imgSrc = $(item).find(".card-image img").attr("src");
+    const href = $(item).find("a").attr("href");
+
     items.push({
-      title: $(item).find('.product-title').text(),
-      price: parseFloat($(item).find('.price').text().replace('$', '')),
-      image: 'https://sofctamu.estore.flywire.com' + $(item).find('.card-image').find('img').attr('src') || '/gm.svg',
-      link: 'https://sofctamu.estore.flywire.com' + $(item).find('a').attr('href') || '/',
+      title: title || "Untitled Item",
+      price: parseFloat(priceText) || 0,
+      image: imgSrc
+        ? `https://sofctamu.estore.flywire.com${imgSrc}`
+        : "/gm.svg",
+      link: href ? `https://sofctamu.estore.flywire.com${href}` : "/",
     });
   });
+
   return items;
 }
 
 export default async function Mercado() {
   const items = await fetchFlywireItems();
-
   return <MercadoClient items={items} />;
 }
