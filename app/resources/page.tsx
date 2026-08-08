@@ -65,40 +65,61 @@ function ResourceSection({ title, description, color, image, link_map, place_end
 
 export default function Resources() {
   return (
-    <div className="px-4 md:px-10 h-full flex flex-col gap-10">
-      <ResourceSection
-        title="Tech Affairs Website"
-        description="The Tech Affairs Website provides a user guide for both creating a Personal Website as well as learning how to code in Python."
-        color="#500000"
-        image="/resources/tech_affairs.png"
-        link_map={{
-          'Tech Affairs Website': 'https://tech.tamushpe.org/',
-        }}
-      />
-      <ResourceSection
-        title="Job Opportunities"
-        description="Whether it be jobs on campus or a summer internships, opportunities are readily available to those seeking the next step in their career."
-        image="/resources/jobs.png"
-        color="#D33A02"
-        link_map={{
-          'Technical Opportunities': 'https://careercenter.tamu.edu/',
-          JobsForAggies: 'https://employees.tamu.edu/jobsforaggies/',
-          'Undergraduate Research': 'https://launch.tamu.edu/undergraduate-research',
-        }}
-        place_end
-      />
-      <ResourceSection
-        title="Mental Health"
-        description="Living in a virtual world can take a toll on one's mental health.
-           In SHPE, we believe that mental health is an important aspect and should be addressed with utmost importance.
-           TAMU Helpline: 979-845-2700 --- About the Helpline"
-        color="#60a5fa"
-        image="/resources/mental_health.png"
-        link_map={{
-          'Self Help Resources': 'https://uhs.tamu.edu/mental-health/index.html',
-          'Counseling Appointments': 'https://tamuportal.pointnclick.com/',
-        }}
-      />
+    <div className="h-full flex flex-col gap-10">
+      {/* Hero image occupying the top third of the page */}
+      <div className="relative w-full aspect-[21/10] -mt-4 md:-mt-10 rounded-b-3xl overflow-hidden">
+        <Image
+          src="/resources/resourcesPhotoHeader.png"
+          alt="Resources"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute bottom-4 left-0 p-6 md:p-10">
+          <h1 className="text-6xl md:text-6xl font-extrabold text-[#60a5fa] leading-tight">
+            Resources
+          </h1>
+          <p className="text-base md:text-xl font-bold text-white mt-2">
+            A toolkit for success
+          </p>
+        </div>
+    </div>
+      <div className="px-4 md:px-10 flex flex-col gap-10">
+        <ResourceSection
+          title="Tech Affairs Website"
+          description="The Tech Affairs Website provides a user guide for both creating a Personal Website as well as learning how to code in Python."
+          color="#500000"
+          image="/resources/tech_affairs.png"
+          link_map={{
+            'Tech Affairs Website': 'https://tech.tamushpe.org/',
+          }}
+        />
+        <ResourceSection
+          title="Job Opportunities"
+          description="Whether it be jobs on campus or a summer internships, opportunities are readily available to those seeking the next step in their career."
+          image="/resources/jobs.png"
+          color="#D33A02"
+          link_map={{
+            'Technical Opportunities': 'https://careercenter.tamu.edu/',
+            JobsForAggies: 'https://employees.tamu.edu/jobsforaggies/',
+            'Undergraduate Research': 'https://launch.tamu.edu/undergraduate-research',
+          }}
+          place_end
+        />
+        <ResourceSection
+          title="Mental Health"
+          description="Living in a virtual world can take a toll on one's mental health.
+             In SHPE, we believe that mental health is an important aspect and should be addressed with utmost importance.
+             TAMU Helpline: 979-845-2700 --- About the Helpline"
+          color="#60a5fa"
+          image="/resources/mental_health.png"
+          link_map={{
+            'Self Help Resources': 'https://uhs.tamu.edu/mental-health/index.html',
+            'Counseling Appointments': 'https://tamuportal.pointnclick.com/',
+          }}
+        />
+      </div>
     </div>
   );
 }
