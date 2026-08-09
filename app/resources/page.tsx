@@ -65,7 +65,7 @@ function ResourceSection({ title, description, color, image, link_map, place_end
 
 export default function Resources() {
   return (
-    <div className="h-full flex flex-col gap-10">
+    <div className="h-full flex flex-col gap-8">
       {/* Hero image occupying the top third of the page */}
       <div className="relative w-full aspect-[21/10] -mt-4 md:-mt-10 rounded-b-3xl overflow-hidden">
         <Image
@@ -77,14 +77,16 @@ export default function Resources() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute bottom-4 left-0 p-6 md:p-10">
-          <h1 className="text-6xl md:text-6xl font-extrabold text-[#60a5fa] leading-tight">
+          <h1 className="text-6xl md:text-[100px] font-inter text-[#72ABBF] leading-tight font-bold">
             Resources
           </h1>
-          <p className="text-base md:text-xl font-bold text-white mt-2">
+          <p className="text-base md:text-[52px] font-inter font-bold text-white mt-2">
             A toolkit for success
           </p>
         </div>
-    </div>
+      </div>
+      <div className="w-full h-16 bg-[#72ABBF] -mt-14 rounded-b-3xl overflow-hidden">
+        </div>
       <div className="px-4 md:px-10 flex flex-col gap-10">
         <ResourceSection
           title="Tech Affairs Website"
