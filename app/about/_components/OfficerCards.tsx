@@ -33,7 +33,7 @@ export default function OfficerCards() {
       position: 'Secretary',
       major: 'Civil Engineering',
       year: '27',
-      img: '/officers/secretary_headshot.jpeg?v=1',
+      img: '/officers/secretary_headshot.jpeg',
       bio:"Howdy!! My name is Joelda Alcaraz, and I am a Civil Engineering major in the Class of ‘27. I was born and raised in Del Rio, Texas. In my free time, I enjoy playing golf, attending hot yoga/pilates classes, painting, and traveling to new places with my friends and family.",
       quote: "\"Cada día es una nueva página en tu historia, escribe algo increíble.\"",
       linkedin:"https://www.linkedin.com/in/joelda-alcaraz/",
