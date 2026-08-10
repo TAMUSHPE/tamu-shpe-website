@@ -4,20 +4,15 @@ export default function Sponsor() {
   return (
     <div className="h-full overflow-auto">
       <main>
-        <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex flex-col lg:flex-row justify-between mx-4 md:mx-10">
           {/* Title Card */}
-          <div className="bg-[url(/sponsor_cover.jpg)] bg-center bg-cover h-[45vh] lg:w-[55%] sm:w-4/5 w-full ease-in-out transition">
-            <div className="w-full h-full content-center bg-[#500000] bg-opacity-65">
-              <h1 className="text-white text-6xl text-center w-5/6 m-auto">Interested in Sponsoring TAMU SHPE?</h1>
+          <div className="bg-[url(/newSponsorCover.jpg)] bg-center bg-cover h-[82vh] lg:w-full sm:w-4/5 w-full ease-in-out transition rounded-3xl overflow-hidden">
+            <div className="w-full h-full content-center bg-[#191740] bg-opacity-65">
+              <h1 className="text-white text-7xl text-center w-3/4 m-auto font-semibold">TAMU SHPE Sponsors</h1>
+              <p className="text-white text-lg sm:text-3xl text-center max-w-2xl m-auto mt-6">
+                Our TAMU SHPE familia is deeply grateful to our incredible sponsors whose generous support empowers the next generation of Hispanic engineers. Your belief in our mission inspires us every day and helps us build a stronger, more inclusive future in STEM.
+              </p>
             </div>
-          </div>
-          {/* Description Card */}
-          <div className="border-4 border-[#3C0000] h-fit w-4/5 lg:w-2/5 mt-14 self-end content-center">
-            <p className="text-[#732F2F] text-center text-3xl p-7">
-              We&apos;re on the lookout for dynamic, innovative companies to join our #SHPEfamilia! With engaging
-              socials and insightful meetings, there are countless opportunities for your company to connect and grow
-              with us. Let&apos;s build a brighter future together!
-            </p>
           </div>
         </div>
 
