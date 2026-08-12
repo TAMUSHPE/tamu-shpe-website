@@ -21,30 +21,19 @@ export default function Sponsor() {
           </div>
         </div>
 
-        <div className="flex justify-around items-center flex-col lg:flex-row my-10 gap-10">
+        <div className="flex justify-around items-center flex-col lg:flex-row my-10 gap-19">
           {/* Benefits Card */}
-          <div className="bg-[#FD652F] text-white w-[90%] lg:w-[40vw] px-9 py-7">
-            <h2 className="text-xl sm:text-3xl text-center pb-3 font-semibold">Benefits of Becoming a Sponsor</h2>
-            <ul className="flex flex-col list-disc list-inside text-lg sm:text-2xl w-fit m-auto gap-2">
-              <li>Access to Member Resumes</li>
-              <li>Host a Technical Workshop</li>
-              <li>Host General Meetings</li>
-              <li>Host Company Tours</li>
-              <li>Promotion through our email</li>
-              <li>Participate as a Professional Mentor</li>
-            </ul>
-          </div>
-          {/* Proposal Card */}
-          <div className="flex flex-col bg-[#191740] w-[90%] lg:w-[35vw] text-white p-8 font-medium justify-center items-center gap-4">
-            <p className="text-3xl text-center">
-              Take a look at our SponsorSHPE proposal packet below to learn where you fit into TAMU SHPE
+          <div className="border-8 border-[#3C0000] text-white w-[90%] lg:w-[40vw] px-9 py-7 flex flex-col gap-4">
+            <h1 className="text-[#732F2F] text-center text-4xl font-semibold">Join Our Mission!</h1>
+            <p className="text-[#732F2F] text-center text-xl font-medium ">
+              We're on the lookout for dynamic, innovative companies to join our #SHPEfamilia!
             </p>
-            <Link
-              href="/pdf/Sponsorship 2024-2025.pdf"
-              className="bg-[#1870B8] w-fit text-2xl px-8 py-2 rounded-xl"
-            >
-              Our Proposal
-            </Link>
+            <p className="text-[#732F2F] text-center text-xl font-medium ">
+              Through engaging socials and insightful meetings, there are countless opportunities for your company to connect and grow with us.
+            </p>
+            <p className="text-[#732F2F] text-center text-xl font-medium ">
+              Let's build a brighter future together!
+            </p>
           </div>
         </div>
 
