@@ -36,15 +36,12 @@ export default function Sponsor() {
           </div>
           {/* Proposal Card */}
           <div className="flex flex-col bg-[#191740] w-[90%] lg:w-[35vw] text-white p-8 font-medium justify-center items-center gap-4">
-            <p className="text-3xl text-center">
-              Take a look at our SponsorSHPE proposal packet below to learn where you fit into TAMU SHPE
+            <h1 className="text-3xl text-center font-semibold">
+              Want to become a Sponsor?
+            </h1>
+            <p className="text-xl text-left">
+              Contant our Vice President, Alejandra Patlan at tamushpe@gmail.com. Event and meeting reservations are prioritized by sponsorship level, then on a firstcome, first-served basis, and financial contribution amount. Reservations will be made only after payment is received and confirmed.
             </p>
-            <Link
-              href="/pdf/Sponsorship 2024-2025.pdf"
-              className="bg-[#1870B8] w-fit text-2xl px-8 py-2 rounded-xl"
-            >
-              Our Proposal
-            </Link>
           </div>
         </div>
 
