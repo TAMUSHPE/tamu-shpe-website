@@ -53,7 +53,7 @@ export default function Involvement() {
                     {' '}
                     1. Pay $20 to cover your #TAMUSHPE{' '}
                     <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap">
-                      <Link href="https://sofctamu.estore.flywire.com/products/20242025-membershpe-shirt--copy-366673" target='_blank'>
+                      <Link href="https://sofctamu.estore.flywire.com/products/2026-2027-membershpe-shirt-457083" target='_blank'>
                         T-shirt
                       </Link>
                     </span>
@@ -68,7 +68,7 @@ export default function Involvement() {
                     3. Fill out our{' '}
                     <span className="box-content bg-[#FD652F] rounded-sm text-white p-0.5 shadow-black shadow-sm hover:transition-shadow hover:shadow-md text-nowrap">
 
-                      <Link href="https://sofctamu.estore.flywire.com/products/20242025-membershpe-shirt--copy-366673" target='_blank'>
+                      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeFnsZisuyttm5iBAyw9z4GaVLXCmiGpay2PL8Z49vStln2Ow/viewform" target='_blank'>
 
                         Google Form
                       </Link>

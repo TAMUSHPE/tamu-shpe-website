@@ -40,7 +40,7 @@ export default function Sponsor() {
               Take a look at our SponsorSHPE proposal packet below to learn where you fit into TAMU SHPE
             </p>
             <Link
-              href="/pdf/Sponsorship 2024-2025.pdf"
+              href="pdf/Sponsorship Prospectus 2026-2027.pdf"
               className="bg-[#1870B8] w-fit text-2xl px-8 py-2 rounded-xl"
             >
               Our Proposal
@@ -52,7 +52,7 @@ export default function Sponsor() {
         <div className="bg-[#D3E5F4] w-[90%] lg:w-4/5 mx-auto py-3 px-5">
           <h2 className="text-xl font-semibold text-[#1870B8]">How to become a Sponsor?</h2>
           <p className="font-medium">
-            Contact our Vice President, Sebastian Luna, at tamushpe@gmail.com. Event and meeting reservations are
+            Contact our Vice President, Alejandra Patlan, at tamushpe@gmail.com. Event and meeting reservations are
             prioritized by sponsorship level, then on a firstcome, first-served basis, and financial contribution
             amount. Reservations will be made only after payment is received and confirmed.
           </p>
