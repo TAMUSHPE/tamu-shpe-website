@@ -1,3 +1,4 @@
+
 import OfficerCard from './OfficerCard';
 
 export default function OfficerCards() {
@@ -8,12 +9,12 @@ export default function OfficerCards() {
       major: 'Industrial Distribution',
       year: '25',
       img: '/officers/president_headshot.jpg',
-      bio: "Howdy SHPE Familia! My name is Marianne Bautista, and I am from Laredo, Texas. I'm a senior and love process optimization and supply chain management (Major in Industrial Distribution)! Sports, the outdoors, music, and food is pretty much all it takes to make me happy!",
-      quote: "\"Failure isn't the opposite of success - it's part of it.\"",
-      linkedin:"https://www.linkedin.com/in/marianne--bautista/",
-      linktree:"https://linktr.ee/marianneb090",
-      email:"marianneb090@tamu.edu",
-      location: "Laredo,TX",
+      bio: "Howdy SHPE Familia! My name is Marianne Bautista, and I am from Laredo, Texas. I'm a senior and love process optimization and supply chain management! Sports, the outdoors, music, and food is pretty much all it takes to make me happy!",
+      quote: `"Failure isn't the opposite of success - it's part of it."`,
+      linkedin: 'https://www.linkedin.com/in/marianne--bautista/',
+      linktree: 'https://linktr.ee/marianneb090',
+      email: 'marianneb090@tamu.edu',
+      location: 'Laredo, TX',
     },
     {
       name: 'Andy Cano-Avila',
@@ -21,12 +22,12 @@ export default function OfficerCards() {
       major: 'Mechanical Engineering',
       year: '26',
       img: '/officers/VP_headshot.jpeg',
-      bio: "Howdy! My name is Andy Cano-Avila, and I'm a Mechanical Engr major in the class of ‘26. I was born and raised in Katy, Tx. I enjoy playing different sports and rock climbing. Music is a big part of my day to day so please send me recommendations.",
-      quote: "\"Dont be upset when you have a lot on your plate, your goal was to eat\"",
-      linkedin:"https://www.linkedin.com/in/andy-cano-avila/",
-      linktree:"https://linktr.ee/andycano10",
-      email:"andycano10@tamu.edu",
-      location: "Katy,TX",
+      bio: "Howdy! My name is Andy Cano-Avila, and I'm a Mechanical Engineering major in the class of '26. I was born and raised in Katy, TX. I enjoy playing different sports and rock climbing. Music is a big part of my day to day so please send me recommendations.",
+      quote: `"Dont be upset when you have a lot on your plate, your goal was to eat"`,
+      linkedin: 'https://www.linkedin.com/in/andy-cano-avila/',
+      linktree: 'https://linktr.ee/andycano10',
+      email: 'andycano10@tamu.edu',
+      location: 'Katy, TX',
     },
     {
       name: 'Joelda Alcaraz',
@@ -34,12 +35,12 @@ export default function OfficerCards() {
       major: 'Civil Engineering',
       year: '27',
       img: '/officers/secretary_headshot.jpeg',
-      bio:"Howdy!! My name is Joelda Alcaraz, and I am a Civil Engineering major in the Class of ‘27. I was born and raised in Del Rio, Texas. In my free time, I enjoy playing golf, attending hot yoga/pilates classes, painting, and traveling to new places with my friends and family.",
-      quote: "\"Cada día es una nueva página en tu historia, escribe algo increíble.\"",
-      linkedin:"https://www.linkedin.com/in/joelda-alcaraz/",
-      linktree:"https://linktr.ee/joeldaalcaraz",
-      email:"joelda-8145@tamu.edu",
-      location: "Del Rio,TX",
+      bio: "Howdy!! My name is Joelda Alcaraz, and I am a Civil Engineering major in the Class of '27. I was born and raised in Del Rio, Texas. In my free time, I enjoy playing golf, attending hot yoga/pilates classes, painting, and traveling to new places with my friends and family.",
+      quote: `"Cada día es una nueva página en tu historia, escribe algo increíble."`,
+      linkedin: 'https://www.linkedin.com/in/joelda-alcaraz/',
+      linktree: 'https://linktr.ee/joeldaalcaraz',
+      email: 'joelda-8145@tamu.edu',
+      location: 'Del Rio, TX',
     },
     {
       name: 'Jonathan Rodezno',
@@ -47,12 +48,12 @@ export default function OfficerCards() {
       major: 'Industrial Distribution',
       year: '26',
       img: '/officers/Treasurer_headshot.png',
-      bio:"Howdy! My name is Jonathan Rodezno, I'm a Senior Industrial Distribution Major from Santa Tecla, El Salvador! I love being outdoors exploring new places, meeting new people, and fútbol!",
-      quote: "\"Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present\" - Master Oogway",
-      linkedin:"https://www.linkedin.com/in/jonathan-rodezno/",
-      linktree:"https://linktr.ee/Jonathan__R",
-      email:"jonathan1417@tamu.edu",
-      location: "Santa Tecla,Salvador",
+      bio: "Howdy! My name is Jonathan Rodezno, I'm a Senior Industrial Distribution Major from Santa Tecla, El Salvador! I love being outdoors exploring new places, meeting new people, and fútbol!",
+      quote: `"Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present" - Master Oogway`,
+      linkedin: 'https://www.linkedin.com/in/jonathan-rodezno/',
+      linktree: 'https://linktr.ee/Jonathan__R',
+      email: 'jonathan1417@tamu.edu',
+      location: 'Santa Tecla, El Salvador',
     },
     {
       name: 'Alvaro Camacho',
@@ -60,12 +61,12 @@ export default function OfficerCards() {
       major: 'Electrical Engineering',
       year: '26',
       img: '/officers/DOTA_headshot.jpeg',
-      bio:"Howdy! My name is Alvaro Camacho and I am a Junior Electrical Engineering major from Katy Texas! In my free time I like to play and watch futbol, play video games, golf, or salsa dance! Feel free to talk to me about all sorts of sports and music! I love talking about new things!",
-      quote:"\"Tell me and I forget, teach me and I may remember, involve me and I learn\" - Benjamin Franklin",
-      linkedin:"https://www.linkedin.com/in/alvarojcamachoh/",
-      linktree:"https://linktr.ee/alvaro.j.camacho.h",
-      email:"alvarojcamacho0718@tamu.edu",
-      location: "Katy,TX",
+      bio: "Howdy! My name is Alvaro Camacho and I am a Junior Electrical Engineering major from Katy Texas! In my free time I like to play and watch futbol, play video games, golf, or salsa dance! Feel free to talk to me about all sorts of sports and music!",
+      quote: `"Tell me and I forget, teach me and I may remember, involve me and I learn" - Benjamin Franklin`,
+      linkedin: 'https://www.linkedin.com/in/alvarojcamachoh/',
+      linktree: 'https://linktr.ee/alvaro.j.camacho.h',
+      email: 'alvarojcamacho0718@tamu.edu',
+      location: 'Katy, TX',
     },
     {
       name: 'Ivan Cardenas',
@@ -73,12 +74,12 @@ export default function OfficerCards() {
       major: 'Industrial Distribution',
       year: '27',
       img: '/officers/PR_headshot.jpeg',
-      bio:"Howdy! My name is Ivan Cardenas! I'm a junior Industrial Distribution major from Laredo, Texas! Reading, painting and listening to music makes me happy! Currently, I'm Murder On The Dance Floor by Sophie Ellis-Bextor is on loop!",
-      quote:"\"If the hurt comes so will the happiness -be patient\" - Rupi Kaur",
-      linkedin:"https://www.linkedin.com/in/ivan-cardenas-886439326/",
-      linktree:"https://linktr.ee/ivancardena5",
-      email:"ivancardenas@tamu.edu",
-      location: "Laredo,TX",
+      bio: "Howdy! My name is Ivan Cardenas! I'm a junior Industrial Distribution major from Laredo, Texas! Reading, painting and listening to music makes me happy! Currently, Murder On The Dance Floor by Sophie Ellis-Bextor is on loop!",
+      quote: `"If the hurt comes so will the happiness -be patient" - Rupi Kaur`,
+      linkedin: 'https://www.linkedin.com/in/ivan-cardenas-886439326/',
+      linktree: 'https://linktr.ee/ivancardena5',
+      email: 'ivancardenas@tamu.edu',
+      location: 'Laredo, TX',
     },
     {
       name: 'Anthony Santamaria Galindo',
@@ -86,12 +87,12 @@ export default function OfficerCards() {
       major: 'Aerospace Engineering',
       year: '27',
       img: '/officers/IA_headshot.jpg',
-      bio:"Howdy! My name is Anthony Santamaria Galindo, and I'm an Aerospace Engineering major in the Class of '27. I'm from Plano, Texas. I'm usually at the gym, playing sports, or pretending I know what I'm doing in the kitchen. If you ever need a workout buddy or just someone to hype you up on leg day, hit me up!",
-      quote:"\"Ponte las pilas\" - momma",
-      linkedin:"https://www.linkedin.com/in/anthony-sg/",
-      linktree:"https://linktr.ee/Anthonysg",
-      email:"asantamaria4@tamu.edu",
-      location: "Plano,TX",
+      bio: "Howdy! My name is Anthony Santamaria Galindo, and I'm an Aerospace Engineering major in the Class of '27. I'm from Plano, Texas. I'm usually at the gym, playing sports, or pretending I know what I'm doing in the kitchen. If you ever need a workout buddy, hit me up!",
+      quote: `"Ponte las pilas" - momma`,
+      linkedin: 'https://www.linkedin.com/in/anthony-sg/',
+      linktree: 'https://linktr.ee/Anthonysg',
+      email: 'asantamaria4@tamu.edu',
+      location: 'Plano, TX',
     },
     {
       name: 'Alejandra Patlan',
@@ -99,12 +100,12 @@ export default function OfficerCards() {
       major: 'Manufacturing Engineering',
       year: '27',
       img: '/officers/EA_headshot.jpeg',
-      bio:"Howdy! My name is Alejandra Patlan. I was born in McAllen, Texas, and I'm a Manufacturing Engineering major, Class of 2027! I love riding my bike around campus and trying out new recipes. If you have any questions, feel free to reach out!",
-      quote:"\"Youth is something I never wanna take for granted. I just want to smile and live life.\" - Tyler, The Creator",
-      linkedin:"https://www.linkedin.com/in/alejandra-patlan/",
-      linktree:"https://linktr.ee/ale.patlan",
-      email:"ale_nat_patlan13@tamu.edu",
-      location: "McAllen,TX",
+      bio: "Howdy! My name is Alejandra Patlan. I was born in McAllen, Texas, and I'm a Manufacturing Engineering major, Class of 2027! I love riding my bike around campus and trying out new recipes. If you have any questions, feel free to reach out!",
+      quote: `"Youth is something I never wanna take for granted. I just want to smile and live life." - Tyler, The Creator`,
+      linkedin: 'https://www.linkedin.com/in/alejandra-patlan/',
+      linktree: 'https://linktr.ee/ale.patlan',
+      email: 'ale_nat_patlan13@tamu.edu',
+      location: 'McAllen, TX',
     },
     {
       name: 'Oscar Rios',
@@ -112,20 +113,37 @@ export default function OfficerCards() {
       major: 'Chemical Engineering',
       year: '28',
       img: '/officers/AD_headshot.jpeg',
-      bio:"Howdy! My name is Oscar Rios, and I'm a Chemical Engineering major in the Class of '28. I'm from Kingwood, Texas — a town just north of Houston. I love going to the gym, playing pickleball, and binge-watching shows. I'm excited to meet new people and make lots of friends this year!",
-      quote:"\"I believe success is achieved by ordinary people with extraordinary determination.\" - Zig Ziglar",
-      linkedin:"https://www.linkedin.com/in/oscar-rios-33316b278/",
-      linktree:"https://linktr.ee/oscar.rios05",
-      email:"oscarsrios4615@tamu.edu",
-      location: "Kingwood,TX",
+      bio: "Howdy! My name is Oscar Rios, and I'm a Chemical Engineering major in the Class of '28. I'm from Kingwood, Texas — a town just north of Houston. I love going to the gym, playing pickleball, and binge-watching shows. I'm excited to meet new people and make lots of friends this year!",
+      quote: `"I believe success is achieved by ordinary people with extraordinary determination." - Zig Ziglar`,
+      linkedin: 'https://www.linkedin.com/in/oscar-rios-33316b278/',
+      linktree: 'https://linktr.ee/oscar.rios05',
+      email: 'oscarsrios4615@tamu.edu',
+      location: 'Kingwood, TX',
     },
   ];
 
-  return (
-    <div className="grid grid-cols-3 gap-4 place-items-center mb-3">
-      {officers.map((officer) => {
-        return <OfficerCard key={officer.name} {...officer} />;
-      })}
+
+
+
+
+return (
+  <div className="w-full max-w-[1450px] mx-auto mb-8">
+    <div className="flex flex-wrap justify-center gap-4">
+      {officers.map((officer) => (
+        <div
+          key={officer.name}
+          className="
+            w-full
+            max-w-[270px]
+            sm:w-[calc((100%_-_1rem)/2)]
+            md:w-[calc((100%_-_2rem)/3)]
+            lg:w-[calc((100%_-_4rem)/5)]
+            min-w-0
+          "
+        >
+          <OfficerCard {...officer} />
+        </div>
+      ))}
     </div>
-  );
-}
+  </div>
+)}
