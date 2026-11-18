@@ -1,21 +1,25 @@
 
 import VideoBox from './_components/VideoBox';
 import CommitteeCards from './_components/CommitteeCards';
+import { committees, committeePhotoPath } from './_data/committees';
 import Link from 'next/link';
 import Image from 'next/image';
 
 // Temporary collage photos using your committee images.
 // Replace these paths with actual group photos whenever available.
-const collageImages = [
-  '/committees/shpetinas.jpg',
-  '/committees/mentorshpe.jpg',
-  '/committees/internal.jpg',
-  '/committees/external.jpg',
-  '/committees/tech.jpg',
-  '/committees/profdev.jpg',
-  '/committees/leadershpe.jpg',
-  '/committees/webdev.jpg',
+const collageSlugs = [
+  'shpetinas',
+  'mentorshpe',
+  'internal-affairs',
+  'external-affairs',
+  'technical-affairs',
+  'professional-development',
+  'leadershpe',
+  'web-development',
 ];
+const collageImages = committees
+  .filter((c) => c.active && collageSlugs.includes(c.photo))
+  .map((c) => committeePhotoPath(c.photo));
 
 const pointGroups = [
   {

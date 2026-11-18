@@ -3,30 +3,10 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
+import { committees, committeePhotoPath, type Committee } from '../_data/committees';
 
-interface Committee {
-  name: string;
-  img: string;
-}
-
-const committees: Committee[] = [
-  { name: 'SHPEtinas', img: '/committees/shpetinas.jpg' },
-  { name: 'MentorSHPE', img: '/committees/mentorshpe.jpg' },
-  { name: 'Public Relations', img: '/committees/pr.jpg' },
-  { name: 'Internal Affairs', img: '/committees/internal.jpg' },
-  { name: 'Treasurer', img: '/committees/treasurer.jpg' },
-  { name: 'External Affairs', img: '/committees/external.jpg' },
-  { name: 'Technical Affairs', img: '/committees/tech.jpg' },
-  { name: 'Scholastic', img: '/committees/scholastic.jpg' },
-  { name: 'Secretary', img: '/committees/secretary.jpg' },
-  { name: 'LeaderSHPE', img: '/committees/leadershpe.jpg' },
-  {
-    name: 'Professional Development',
-    img: '/committees/profdev.jpg',
-  },
-  { name: 'Web Development', img: '/committees/webdev.jpg' },
-  { name: 'App Development', img: '/committees/appdev.jpg' },
-];
+const DEFAULT_DESCRIPTION =
+  'This is placeholder text for the committee description. Learn more about our activities, projects, events, and opportunities!';
 
 const faceStyle = {
   backfaceVisibility: 'hidden' as const,
@@ -75,7 +55,7 @@ function CommitteeCard({
             <div className="relative w-[78%] aspect-[244/198] mt-[10%] shrink-0 overflow-hidden rounded-[12%] bg-[#303052]">
               {!imageFailed ? (
                 <Image
-                  src={committee.img}
+                  src={committeePhotoPath(committee.photo)}
                   alt={committee.name}
                   fill
                   sizes="(max-width: 640px) 45vw, (max-width: 1024px) 30vw, 300px"
@@ -125,11 +105,9 @@ function CommitteeCard({
             {/* DIVIDER */}
             <div className="w-3/4 h-[2px] bg-[#D1D1D1] shrink-0" />
 
-            {/* PLACEHOLDER DESCRIPTION */}
+            {/* DESCRIPTION (edit in _data/committees.ts) */}
             <p className="text-white text-center text-[clamp(0.6rem,1vw,0.875rem)] leading-snug [overflow-wrap:anywhere]">
-              This is placeholder text for the committee
-              description. Learn more about our activities,
-              projects, events, and opportunities!
+              {committee.description || DEFAULT_DESCRIPTION}
             </p>
 
             {/* FLIP INSTRUCTION */}
@@ -160,7 +138,9 @@ export default function CommitteeCards() {
 
       {/* COMMITTEE GRID */}
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-5">
-        {committees.map((committee) => (
+        {committees
+          .filter((committee) => committee.active)
+          .map((committee) => (
           <CommitteeCard
             key={committee.name}
             committee={committee}
