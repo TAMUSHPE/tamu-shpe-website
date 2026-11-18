@@ -21,3 +21,121 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+/* =========================================
+   FIVE PILLARS - SLOW SWAYING BACKGROUND
+   ========================================= */
+
+.pillar-blob {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(85px);
+  will-change: transform;
+}
+
+/* Left Maroon Glow */
+.pillar-blob-one {
+  width: 70%;
+  height: 140%;
+  top: -25%;
+  left: -30%;
+
+  background: radial-gradient(
+    circle,
+    rgba(110, 22, 55, 0.9) 0%,
+    rgba(80, 15, 45, 0.55) 40%,
+    transparent 75%
+  );
+
+  animation: pillar-sway-one 28s ease-in-out infinite alternate;
+}
+
+/* Right Purple Glow */
+.pillar-blob-two {
+  width: 75%;
+  height: 140%;
+  top: -30%;
+  right: -30%;
+
+  background: radial-gradient(
+    circle,
+    rgba(105, 40, 100, 0.85) 0%,
+    rgba(50, 25, 80, 0.55) 40%,
+    transparent 75%
+  );
+
+  animation: pillar-sway-two 34s ease-in-out infinite alternate;
+}
+
+/* Center Navy Glow */
+.pillar-blob-three {
+  width: 65%;
+  height: 110%;
+  bottom: -45%;
+  left: 20%;
+
+  background: radial-gradient(
+    circle,
+    rgba(43, 45, 115, 0.85) 0%,
+    rgba(35, 25, 85, 0.5) 40%,
+    transparent 75%
+  );
+
+  animation: pillar-sway-three 40s ease-in-out infinite alternate;
+}
+
+/* Sway from Left to Right */
+@keyframes pillar-sway-one {
+  0% {
+    transform: translate3d(-5%, 0%, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(18%, 8%, 0) scale(1.12);
+  }
+
+  100% {
+    transform: translate3d(35%, -5%, 0) scale(1);
+  }
+}
+
+/* Sway from Right to Left */
+@keyframes pillar-sway-two {
+  0% {
+    transform: translate3d(5%, 0%, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-20%, -8%, 0) scale(1.15);
+  }
+
+  100% {
+    transform: translate3d(-35%, 8%, 0) scale(1);
+  }
+}
+
+/* Gentle Vertical Movement */
+@keyframes pillar-sway-three {
+  0% {
+    transform: translate3d(-10%, 10%, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(10%, -12%, 0) scale(1.15);
+  }
+
+  100% {
+    transform: translate3d(-5%, 15%, 0) scale(1);
+  }
+}
+
+/* Accessibility: Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+  .pillar-blob {
+    animation: none !important;
+    will-change: auto;
+  }
+}
